@@ -27,10 +27,28 @@ function showForceDirectedGraph() {
 
     // Add zoom behavior
     const g = svg.append('g');
+    let currentScale = 1;  // Track current zoom scale
+
+    // Create label groups first
+    const nodeLabels = g.append('g')
+        .attr('class', 'node-labels')
+        .style('pointer-events', 'none');
+
+    const linkLabels = g.append('g')
+        .attr('class', 'link-labels')
+        .style('pointer-events', 'none');
+
+    // Set up zoom behavior after labels are created
     const zoom = d3.zoom()
         .scaleExtent([0.1, 4])
         .on('zoom', (event) => {
             g.attr('transform', event.transform);
+            currentScale = Math.max(event.transform.k * 0.5, 1);  // Update current scale
+            // Update label sizes based on zoom level
+            nodeLabels.selectAll('text')
+                .style('font-size', `${8 / currentScale}px`);
+            linkLabels.selectAll('text')
+                .style('font-size', `${6 / currentScale}px`);
         });
     svg.call(zoom);
 
@@ -231,7 +249,7 @@ function showForceDirectedGraph() {
         const link = g.append('g')
             .attr('stroke', '#000')
             .selectAll('line')
-      .data(links)
+            .data(links)
             .join('line')
             .attr('stroke-opacity', d => (d.value || 1) * 0.7)  // Opacity scales with value
             .attr('stroke-width', d => (d.value || 1) * 2);  // Width proportional to link value
@@ -241,7 +259,7 @@ function showForceDirectedGraph() {
             .attr('stroke', '#666')
             .attr('stroke-width', 1)
             .selectAll('circle')
-      .data(nodes)
+            .data(nodes)
             .join('circle')
             .attr('r', d => (radiusScale(d.marketCap) ** 0.5) * 2)
             .attr('fill', d => color(d.sector))
@@ -286,72 +304,9 @@ function showForceDirectedGraph() {
                     .style('opacity', 0);
             });
 
-        // Create a group for node labels
-        const nodeLabels = g.append('g')
-            .attr('class', 'node-labels')
-            .style('pointer-events', 'none');
-
-        // Create a group for link labels
-        const linkLabels = g.append('g')
-            .attr('class', 'link-labels')
-            .style('pointer-events', 'none');
-
-        // Function to show node labels
-        function showNodeLabels(selectedNode) {
-            // Get all connected nodes and links where selected node is source or target
-            const connectedNodes = new Set();
-            connectedNodes.add(selectedNode.id);
-            
-            // Find all links where selected node is source or target
-            const filteredLinks = links.filter(link => 
-                link.source.id === selectedNode.id || link.target.id === selectedNode.id
-            );
-            
-            // Add the other nodes from these links
-            filteredLinks.forEach(link => {
-                connectedNodes.add(link.source.id);
-                connectedNodes.add(link.target.id);
-            });
-
-            // Filter nodes to only include those in the filtered links
-            const filteredNodes = nodes.filter(d => connectedNodes.has(d.id));
-
-            // Update node labels
-            nodeLabels.selectAll('text')
-                .data(filteredNodes, d => d.id)
-                .join(
-                    enter => enter.append('text')
-                        .attr('text-anchor', 'middle')
-                        .attr('dy', d => (radiusScale(d.marketCap) ** 0.5) * 1)
-                        .style('font-size', '8px')
-                        .style('fill', '#333')
-                        .style('font-weight', 'bold')
-                        .text(d => d.id),
-                    update => update,
-                    exit => exit.remove()
-                );
-
-            // Update link labels
-            linkLabels.selectAll('text')
-                .data(filteredLinks, d => `${d.source.id}-${d.target.id}`)
-                .join(
-                    enter => enter.append('text')
-                        .attr('text-anchor', 'middle')
-                        .attr('dy', 0)
-                        .style('font-size', '6px')
-                        .style('fill', '#111')
-                        .style('font-weight', 'bold')
-                        .text(d => d.value.toFixed(2)),
-                    update => update,
-                    exit => exit.remove()
-                );
-        }
-
-        // Function to hide node labels
-        function hideNodeLabels() {
-            nodeLabels.selectAll('text').remove();
-            linkLabels.selectAll('text').remove();
-        }
+        // Move label groups to the end of the g element to ensure they're on top
+        g.node().appendChild(nodeLabels.node());
+        g.node().appendChild(linkLabels.node());
 
         // Update positions on each tick
         function ticked() {
@@ -446,29 +401,29 @@ function showForceDirectedGraph() {
         }
 
         // Add drag behavior
-    node.call(d3.drag()
+        node.call(d3.drag()
             .on('start', dragstarted)
             .on('drag', dragged)
             .on('end', dragended));
 
         // Drag functions
-    function dragstarted(event) {
-      if (!event.active) simulation.alphaTarget(0.3).restart();
-      event.subject.fx = event.subject.x;
-      event.subject.fy = event.subject.y;
-    }
-  
-    function dragged(event) {
-      event.subject.fx = event.x;
-      event.subject.fy = event.y;
-    }
-  
-    function dragended(event) {
-      if (!event.active) simulation.alphaTarget(0);
-      event.subject.fx = null;
-      event.subject.fy = null;
-    }
-  
+        function dragstarted(event) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            event.subject.fx = event.subject.x;
+            event.subject.fy = event.subject.y;
+        }
+    
+        function dragged(event) {
+            event.subject.fx = event.x;
+            event.subject.fy = event.y;
+        }
+    
+        function dragended(event) {
+            if (!event.active) simulation.alphaTarget(0);
+            event.subject.fx = null;
+            event.subject.fy = null;
+        }
+    
         // Create legend items
         const legendItems = legend.selectAll('.legend-item')
             .data(sectors)
@@ -781,7 +736,64 @@ function showForceDirectedGraph() {
                     exit => exit.remove()
                 );
         }
+
+        // Function to show node labels
+        function showNodeLabels(selectedNode) {
+            // Get all connected nodes and links where selected node is source or target
+            const connectedNodes = new Set();
+            connectedNodes.add(selectedNode.id);
+            
+            // Find all links where selected node is source or target
+            const filteredLinks = links.filter(link => 
+                link.source.id === selectedNode.id || link.target.id === selectedNode.id
+            );
+            
+            // Add the other nodes from these links
+            filteredLinks.forEach(link => {
+                connectedNodes.add(link.source.id);
+                connectedNodes.add(link.target.id);
+            });
+
+            // Filter nodes to only include those in the filtered links
+            const filteredNodes = nodes.filter(d => connectedNodes.has(d.id));
+
+            // Update node labels
+            nodeLabels.selectAll('text')
+                .data(filteredNodes, d => d.id)
+                .join(
+                    enter => enter.append('text')
+                        .attr('text-anchor', 'middle')
+                        .attr('dy', d => (radiusScale(d.marketCap) ** 0.5) * 1)
+                        .style('font-size', `${8 / currentScale}px`)
+                        .style('fill', '#333')
+                        .style('font-weight', 'bold')
+                        .text(d => d.id),
+                    update => update,
+                    exit => exit.remove()
+                );
+
+            // Update link labels
+            linkLabels.selectAll('text')
+                .data(filteredLinks, d => `${d.source.id}-${d.target.id}`)
+                .join(
+                    enter => enter.append('text')
+                        .attr('text-anchor', 'middle')
+                        .attr('dy', 0)
+                        .style('font-size', `${6 / currentScale}px`)
+                        .style('fill', '#111')
+                        .style('font-weight', 'bold')
+                        .text(d => d.value.toFixed(2)),
+                    update => update,
+                    exit => exit.remove()
+                );
+        }
+
+        // Function to hide node labels
+        function hideNodeLabels() {
+            nodeLabels.selectAll('text').remove();
+            linkLabels.selectAll('text').remove();
+        }
     }).catch(error => {
         console.error('Error loading data:', error);
     });
-  }
+}
