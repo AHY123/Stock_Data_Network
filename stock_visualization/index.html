@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive D3.js Stock Visualization</title>
+    <script src="lib/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Stock Visualization</h1>
+        
+        <div class="controls">
+            <button onclick="showScatterPlot()">Scatter Plot</button>
+            <button onclick="showBarChart()">Bar Chart</button>
+            <button onclick="showLineChart()">Line Chart</button>
+            <button onclick="showForceDirectedGraph()">Force Directed Graph</button>
+        </div>
+
+        <div id="visualization" class="viz-container">
+            <!-- D3 visualizations will be rendered here -->
+        </div>
+    </div>
+
+    <!-- Load JavaScript files -->
+    <script src="js/main.js"></script>
+    <script src="js/scatterPlot.js"></script>
+    <script src="js/barChart.js"></script>
+    <script src="js/lineChart.js"></script>
+    <script src="js/forceDirectedGraph.js"></script>
+    <script>
+        // Show scatter plot by default
+        showForceDirectedGraph();
+    </script>
+</body>
+</html>
