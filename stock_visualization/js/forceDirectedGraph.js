@@ -164,7 +164,7 @@ function showForceDirectedGraph() {
         }));
 
         // Debug: Log raw nodes data
-        console.log('Raw nodes data:', graph.nodes);
+        // console.log('Raw nodes data:', graph.nodes);
 
         // Map nodes with proper sector handling
         nodes = graph.nodes.map(d => {
@@ -183,7 +183,7 @@ function showForceDirectedGraph() {
 
         // Get unique sectors and set up color scale
         const sectors = [...new Set(nodes.map(d => d.sector))];
-        console.log('Unique sectors:', sectors);
+        // console.log('Unique sectors:', sectors);
         
         // Create a custom color mapping for sectors
         const sectorColors = [
@@ -204,8 +204,8 @@ function showForceDirectedGraph() {
             .range(sectorColors);
 
         // Debug: Log color mapping
-        console.log('Color mapping:', sectors.map(s => ({sector: s, color: color(s)})));
-        console.log('Sample node colors:', nodes.slice(0, 5).map(d => ({id: d.id, sector: d.sector, color: color(d.sector)})));
+        // console.log('Color mapping:', sectors.map(s => ({sector: s, color: color(s)})));
+        // console.log('Sample node colors:', nodes.slice(0, 5).map(d => ({id: d.id, sector: d.sector, color: color(d.sector)})));
 
         // Create a scale for node sizes based on market cap
         radiusScale = d3.scaleSqrt()
@@ -215,7 +215,7 @@ function showForceDirectedGraph() {
         // Debug: Log processed data
         // console.log('Processed Nodes:', nodes);
         // console.log('Processed Links:', links);
-        console.log('Sectors:', sectors);
+        // console.log('Sectors:', sectors);
 
         // Create a simulation with several forces
         simulation = d3.forceSimulation(nodes)
@@ -713,7 +713,7 @@ function showForceDirectedGraph() {
                     enter => enter.append('text')
                         .attr('text-anchor', 'middle')
                         .attr('dy', d => (radiusScale(d.marketCap) ** 0.5) * 1)
-                        .style('font-size', '8px')
+                        .style('font-size', '6px')
                         .style('fill', '#333')
                         .style('font-weight', 'bold')
                         .text(d => d.id),
@@ -728,7 +728,7 @@ function showForceDirectedGraph() {
                     enter => enter.append('text')
                         .attr('text-anchor', 'middle')
                         .attr('dy', 0)
-                        .style('font-size', '6px')
+                        .style('font-size', '4px')
                         .style('fill', '#111')
                         .style('font-weight', 'bold')
                         .text(d => d.value.toFixed(2)),
