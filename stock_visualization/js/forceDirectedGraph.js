@@ -290,6 +290,11 @@ function showForceDirectedGraph() {
             .attr('class', 'node-labels')
             .style('pointer-events', 'none');
 
+        // Create a group for link labels
+        const linkLabels = g.append('g')
+            .attr('class', 'link-labels')
+            .style('pointer-events', 'none');
+
         // Function to show node labels
         function showNodeLabels(selectedNode) {
             // Get all connected nodes and links where selected node is source or target
@@ -310,7 +315,7 @@ function showForceDirectedGraph() {
             // Filter nodes to only include those in the filtered links
             const filteredNodes = nodes.filter(d => connectedNodes.has(d.id));
 
-            // Update labels
+            // Update node labels
             nodeLabels.selectAll('text')
                 .data(filteredNodes, d => d.id)
                 .join(
@@ -324,11 +329,50 @@ function showForceDirectedGraph() {
                     update => update,
                     exit => exit.remove()
                 );
+
+            // Update link labels
+            linkLabels.selectAll('text')
+                .data(filteredLinks, d => `${d.source.id}-${d.target.id}`)
+                .join(
+                    enter => enter.append('text')
+                        .attr('text-anchor', 'middle')
+                        .attr('dy', 0)
+                        .style('font-size', '8px')
+                        .style('fill', '#666')
+                        .style('font-weight', 'bold')
+                        .text(d => d.value.toFixed(2)),
+                    update => update,
+                    exit => exit.remove()
+                );
         }
 
         // Function to hide node labels
         function hideNodeLabels() {
             nodeLabels.selectAll('text').remove();
+            linkLabels.selectAll('text').remove();
+        }
+
+        // Update positions on each tick
+        function ticked() {
+            link
+                .attr('x1', d => d.source.x)
+                .attr('y1', d => d.source.y)
+                .attr('x2', d => d.target.x)
+                .attr('y2', d => d.target.y);
+
+            node
+                .attr('cx', d => d.x)
+                .attr('cy', d => d.y);
+
+            // Update label positions
+            nodeLabels.selectAll('text')
+                .attr('x', d => d.x)
+                .attr('y', d => d.y);
+
+            // Update link label positions
+            linkLabels.selectAll('text')
+                .attr('x', d => (d.source.x + d.target.x) / 2)
+                .attr('y', d => (d.source.y + d.target.y) / 2);
         }
 
         // Update the resetFilter function to hide labels
@@ -404,24 +448,6 @@ function showForceDirectedGraph() {
             .on('start', dragstarted)
             .on('drag', dragged)
             .on('end', dragended));
-
-        // Update positions on each tick
-    function ticked() {
-      link
-                .attr('x1', d => d.source.x)
-                .attr('y1', d => d.source.y)
-                .attr('x2', d => d.target.x)
-                .attr('y2', d => d.target.y);
-
-            node
-                .attr('cx', d => d.x)
-                .attr('cy', d => d.y);
-
-            // Update label positions
-            nodeLabels.selectAll('text')
-                .attr('x', d => d.x)
-                .attr('y', d => d.y);
-        }
 
         // Drag functions
     function dragstarted(event) {
