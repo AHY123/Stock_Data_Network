@@ -217,7 +217,7 @@ function showForceDirectedGraph() {
                     const nodeLinks = links.filter(l => l.source.id === d.id || l.target.id === d.id);
                     const totalValue = nodeLinks.reduce((sum, l) => sum + (l.value || 1), 0);
                     // Convert to negative value for repulsion (higher value = stronger repulsion)
-                    return -(totalValue ** 0.5) * 20;
+                    return -(totalValue ** 0.2) * 20;
                 })
                 // .distanceMin(50)
                 .distanceMax(100))
@@ -267,9 +267,10 @@ function showForceDirectedGraph() {
                 tooltip.html(`
                     <strong>${d.id}</strong><br/>
                     Sector: ${d.sector}<br/>
-                    Market Cap (B): ${d.marketCap.toLocaleString()}<br/>
+                    Market Cap: $${d.marketCap.toLocaleString()}B<br/>
                     Price: ${d.price}<br/>
-                    Group: ${d.group}
+                    Group: ${d.group}<br/>
+                    Connected Nodes: ${links.filter(l => l.source.id === d.id || l.target.id === d.id).length}
                 `)
                     .style('left', (event.pageX + 10) + 'px')
                     .style('top', (event.pageY - 28) + 'px');
@@ -412,8 +413,9 @@ function showForceDirectedGraph() {
                                 <strong>${d.id}</strong><br/>
                                 Sector: ${d.sector}<br/>
                                 Market Cap (B): $${d.marketCap.toLocaleString()}<br/>
-                                Price: ${d.price}<br/>
-                                Group: ${d.group}
+                                Price: $${d.price}<br/>
+                                Group: ${d.group}<br/>
+                                Connected Nodes: ${links.filter(l => l.source.id === d.id || l.target.id === d.id).length}
                             `)
                                 .style('left', (event.pageX + 10) + 'px')
                                 .style('top', (event.pageY - 28) + 'px');
@@ -607,7 +609,8 @@ function showForceDirectedGraph() {
                                 Sector: ${d.sector}<br/>
                                 Market Cap (B): $${d.marketCap.toLocaleString()}<br/>
                                 Price: $${d.price}<br/>
-                                Group: ${d.group}
+                                Group: ${d.group}<br/>
+                                Connected Nodes: ${links.filter(l => l.source.id === d.id || l.target.id === d.id).length}
                             `)
                                 .style('left', (event.pageX + 10) + 'px')
                                 .style('top', (event.pageY - 28) + 'px');
@@ -696,7 +699,8 @@ function showForceDirectedGraph() {
                                 Sector: ${d.sector}<br/>
                                 Market Cap (B): $${d.marketCap.toLocaleString()}<br/>
                                 Price: $${d.price}<br/>
-                                Group: ${d.group}
+                                Group: ${d.group}<br/>
+                                Connected Nodes: ${links.filter(l => l.source.id === d.id || l.target.id === d.id).length}
                             `)
                                 .style('left', (event.pageX + 10) + 'px')
                                 .style('top', (event.pageY - 28) + 'px');
