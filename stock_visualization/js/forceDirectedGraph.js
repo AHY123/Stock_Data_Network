@@ -238,8 +238,8 @@ function showForceDirectedGraph() {
 
         // Add a circle for each node
         const node = g.append('g')
-            .attr('stroke', '#fff')
-            .attr('stroke-width', 1.5)
+            .attr('stroke', '#666')
+            .attr('stroke-width', 1)
             .selectAll('circle')
       .data(nodes)
             .join('circle')
@@ -267,8 +267,8 @@ function showForceDirectedGraph() {
                 tooltip.html(`
                     <strong>${d.id}</strong><br/>
                     Sector: ${d.sector}<br/>
-                    Market Cap (B): $${d.marketCap.toLocaleString()}<br/>
-                    Price: $${d.price}<br/>
+                    Market Cap (B): ${d.marketCap.toLocaleString()}<br/>
+                    Price: ${d.price}<br/>
                     Group: ${d.group}
                 `)
                     .style('left', (event.pageX + 10) + 'px')
@@ -337,8 +337,8 @@ function showForceDirectedGraph() {
                     enter => enter.append('text')
                         .attr('text-anchor', 'middle')
                         .attr('dy', 0)
-                        .style('font-size', '8px')
-                        .style('fill', '#666')
+                        .style('font-size', '6px')
+                        .style('fill', '#111')
                         .style('font-weight', 'bold')
                         .text(d => d.value.toFixed(2)),
                     update => update,
@@ -475,6 +475,16 @@ function showForceDirectedGraph() {
             .attr('class', 'legend-item')
             .attr('transform', (d, i) => `translate(0, ${i * 20})`)
             .style('cursor', 'pointer')
+            .on('click', function(event, d) {
+                event.stopPropagation();
+                // If we're already in filtered mode (nodes.length < original nodes length), reset
+                if (nodes.length < graph.nodes.length) {
+                    resetFilter();
+                } else {
+                    filterBySector(d);
+                    showSectorLabels(d);
+                }
+            })
             .on('mouseover', function(event, d) {
                 // Highlight nodes of selected sector
                 node.transition()
@@ -622,6 +632,147 @@ function showForceDirectedGraph() {
                         .attr('stroke', '#000')
                         .attr('stroke-opacity', d => (d.value || 1) * 0.7)
                         .attr('stroke-width', d => (d.value || 1) * 2),
+                    update => update,
+                    exit => exit.remove()
+                );
+        }
+
+        // Function to filter by sector
+        function filterBySector(selectedSector) {
+            // Get all nodes in the selected sector
+            const sectorNodes = nodes.filter(d => d.sector === selectedSector);
+            
+            // Get all connected nodes and links
+            const connectedNodes = new Set();
+            sectorNodes.forEach(node => {
+                connectedNodes.add(node.id);
+            });
+            
+            // Find all links connected to sector nodes
+            const filteredLinks = links.filter(link => 
+                sectorNodes.some(n => n.id === link.source.id) || 
+                sectorNodes.some(n => n.id === link.target.id)
+            );
+            
+            // Add all nodes connected to sector nodes
+            filteredLinks.forEach(link => {
+                connectedNodes.add(link.source.id);
+                connectedNodes.add(link.target.id);
+            });
+
+            // Filter nodes to only include those in the filtered links
+            const filteredNodes = nodes.filter(d => connectedNodes.has(d.id));
+
+            // Update the simulation with filtered data
+            simulation.nodes(filteredNodes);
+            simulation.force('link').links(filteredLinks);
+            simulation.alpha(0.3).restart();
+
+            // Update the visualization
+            node.data(filteredNodes, d => d.id)
+                .join(
+                    enter => enter.append('circle')
+                        .attr('r', d => (radiusScale(d.marketCap) ** 0.5) * 2)
+                        .attr('fill', d => color(d.sector))
+                        .call(d3.drag()
+                            .on('start', dragstarted)
+                            .on('drag', dragged)
+                            .on('end', dragended))
+                        .on('click', function(event, d) {
+                            event.stopPropagation();
+                            filterGraph(d);
+                        })
+                        .on('mouseover', function(event, d) {
+                            d3.select(this)
+                                .transition()
+                                .duration(200)
+                                .attr('r', (radiusScale(d.marketCap) ** 0.5) * 2.5);
+
+                            tooltip.transition()
+                                .duration(200)
+                                .style('opacity', .9);
+                            tooltip.html(`
+                                <strong>${d.id}</strong><br/>
+                                Sector: ${d.sector}<br/>
+                                Market Cap (B): $${d.marketCap.toLocaleString()}<br/>
+                                Price: $${d.price}<br/>
+                                Group: ${d.group}
+                            `)
+                                .style('left', (event.pageX + 10) + 'px')
+                                .style('top', (event.pageY - 28) + 'px');
+                        })
+                        .on('mouseout', function(event, d) {
+                            d3.select(this)
+                                .transition()
+                                .duration(500)
+                                .attr('r', (radiusScale(d.marketCap) ** 0.5) * 2);
+                                
+                            tooltip.transition()
+                                .duration(500)
+                                .style('opacity', 0);
+                        }),
+                    update => update,
+                    exit => exit.remove()
+                );
+
+            link.data(filteredLinks, d => `${d.source.id}-${d.target.id}`)
+                .join(
+                    enter => enter.append('line')
+                        .attr('stroke', '#000')
+                        .attr('stroke-opacity', d => (d.value || 1) * 0.7)
+                        .attr('stroke-width', d => (d.value || 1) * 2),
+                    update => update,
+                    exit => exit.remove()
+                );
+        }
+
+        // Function to show sector labels
+        function showSectorLabels(selectedSector) {
+            // Get all nodes in the selected sector
+            const sectorNodes = nodes.filter(d => d.sector === selectedSector);
+            
+            // Find all links connected to sector nodes
+            const filteredLinks = links.filter(link => 
+                sectorNodes.some(n => n.id === link.source.id) || 
+                sectorNodes.some(n => n.id === link.target.id)
+            );
+            
+            // Get all connected nodes
+            const connectedNodes = new Set();
+            filteredLinks.forEach(link => {
+                connectedNodes.add(link.source.id);
+                connectedNodes.add(link.target.id);
+            });
+
+            // Filter nodes to only include those in the filtered links
+            const filteredNodes = nodes.filter(d => connectedNodes.has(d.id));
+
+            // Update node labels
+            nodeLabels.selectAll('text')
+                .data(filteredNodes, d => d.id)
+                .join(
+                    enter => enter.append('text')
+                        .attr('text-anchor', 'middle')
+                        .attr('dy', d => (radiusScale(d.marketCap) ** 0.5) * 1)
+                        .style('font-size', '8px')
+                        .style('fill', '#333')
+                        .style('font-weight', 'bold')
+                        .text(d => d.id),
+                    update => update,
+                    exit => exit.remove()
+                );
+
+            // Update link labels
+            linkLabels.selectAll('text')
+                .data(filteredLinks, d => `${d.source.id}-${d.target.id}`)
+                .join(
+                    enter => enter.append('text')
+                        .attr('text-anchor', 'middle')
+                        .attr('dy', 0)
+                        .style('font-size', '6px')
+                        .style('fill', '#111')
+                        .style('font-weight', 'bold')
+                        .text(d => d.value.toFixed(2)),
                     update => update,
                     exit => exit.remove()
                 );
