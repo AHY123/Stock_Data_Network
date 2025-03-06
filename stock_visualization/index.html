@@ -11,10 +11,8 @@
         <h1>Interactive Stock Visualization</h1>
         
         <div class="graph-selection">
-            <button onclick="showScatterPlot()">Scatter Plot</button>
-            <button onclick="showBarChart()">Bar Chart</button>
-            <button onclick="showLineChart()">Line Chart</button>
-            <button onclick="showForceDirectedGraph()" class="active">Force Directed Graph</button>
+            <button onclick="showPearsonForceGraph()" class="active">Pearson Force Graph</button>
+            <button onclick="showBetaForceGraph()">Beta Force Graph</button>
         </div>
 
         <div class="controls">
@@ -28,13 +26,11 @@
 
     <!-- Load JavaScript files -->
     <script src="js/main.js"></script>
-    <script src="js/scatterPlot.js"></script>
-    <script src="js/barChart.js"></script>
-    <script src="js/lineChart.js"></script>
-    <script src="js/forceDirectedGraph.js"></script>
+    <script src="js/pearsonForceGraph.js"></script>
+    <script src="js/betaForceGraph.js"></script>
     <script>
         // Show force directed graph by default
-        showForceDirectedGraph();
+        showPearsonForceGraph();
     </script>
 </body>
 </html>

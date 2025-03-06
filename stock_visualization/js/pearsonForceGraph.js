@@ -1,4 +1,4 @@
-function showForceDirectedGraph() {
+function showPearsonForceGraph() {
     clearVisualization();
 
     // Get container dimensions
@@ -219,7 +219,7 @@ function showForceDirectedGraph() {
         });
 
     // Load the graph data
-    d3.json('data/stock_graph.json').then(graph => {
+    d3.json('data/pearson_stock_graph.json').then(graph => {
         // Create a map of node IDs to ensure they exist
         const nodeMap = new Map(graph.nodes.map(d => [d.id, d]));
 

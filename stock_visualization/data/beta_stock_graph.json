@@ -247,6 +247,12 @@
             "price": "$4.85"
         },
         {
+            "id": "USEG",
+            "group": "Energy",
+            "marketCap": 0.056769179,
+            "price": "$2.03"
+        },
+        {
             "id": "HOOD",
             "group": "Finance",
             "marketCap": 47.151263251,
@@ -703,6 +709,12 @@
             "price": "$10.53"
         },
         {
+            "id": "AMOD",
+            "group": "Miscellaneous",
+            "marketCap": 0.012321061,
+            "price": "$1.89"
+        },
+        {
             "id": "AGNCN",
             "group": "Real Estate",
             "marketCap": 22.75208731,
@@ -1085,6 +1097,18 @@
             "group": "Utilities",
             "marketCap": 15.229022044,
             "price": "$66.22"
+        },
+        {
+            "id": "NFE",
+            "group": "Utilities",
+            "marketCap": 3.04720194,
+            "price": "$12.12"
+        },
+        {
+            "id": "NEXT",
+            "group": "Utilities",
+            "marketCap": 2.061506193,
+            "price": "$7.92"
         },
         {
             "id": "NTGR",
@@ -2342,6 +2366,21 @@
             "source": "LRCX",
             "target": "KLXE",
             "value": 0.9637522896555566
+        },
+        {
+            "source": "PCVX",
+            "target": "USEG",
+            "value": -0.96292816374681
+        },
+        {
+            "source": "TER",
+            "target": "USEG",
+            "value": -0.9636675504429808
+        },
+        {
+            "source": "NFE",
+            "target": "USEG",
+            "value": -0.9569050715995044
         },
         {
             "source": "LFUS",
@@ -4647,6 +4686,11 @@
             "source": "ZD",
             "target": "TRMB",
             "value": 0.9527287474679456
+        },
+        {
+            "source": "NEXT",
+            "target": "AMOD",
+            "value": -0.9671818538341644
         },
         {
             "source": "SNPS",
