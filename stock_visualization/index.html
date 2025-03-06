@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive D3.js Stock Visualization</title>
     <script src="lib/d3.v7.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -11,11 +10,15 @@
     <div class="container">
         <h1>Interactive Stock Visualization</h1>
         
-        <div class="controls">
+        <div class="graph-selection">
             <button onclick="showScatterPlot()">Scatter Plot</button>
             <button onclick="showBarChart()">Bar Chart</button>
             <button onclick="showLineChart()">Line Chart</button>
-            <button onclick="showForceDirectedGraph()">Force Directed Graph</button>
+            <button onclick="showForceDirectedGraph()" class="active">Force Directed Graph</button>
+        </div>
+
+        <div class="controls">
+            <!-- Control buttons will be added here dynamically -->
         </div>
 
         <div id="visualization" class="viz-container">
@@ -30,7 +33,7 @@
     <script src="js/lineChart.js"></script>
     <script src="js/forceDirectedGraph.js"></script>
     <script>
-        // Show scatter plot by default
+        // Show force directed graph by default
         showForceDirectedGraph();
     </script>
 </body>

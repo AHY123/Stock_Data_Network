@@ -21,7 +21,9 @@ function showForceDirectedGraph() {
         .on('click', function(event) {
             // Only trigger if clicking the background (not nodes or links)
             if (event.target === this) {
-                resetFilter();
+                if (typeof resetFilter === 'function') {
+                    resetFilter();
+                }
             }
         });
 
@@ -31,12 +33,10 @@ function showForceDirectedGraph() {
 
     // Create label groups first
     const nodeLabels = g.append('g')
-        .attr('class', 'node-labels')
-        .style('pointer-events', 'none');
+        .attr('class', 'node-labels');
 
     const linkLabels = g.append('g')
-        .attr('class', 'link-labels')
-        .style('pointer-events', 'none');
+        .attr('class', 'link-labels');
 
     // Set up zoom behavior after labels are created
     const zoom = d3.zoom()
@@ -52,10 +52,16 @@ function showForceDirectedGraph() {
         });
     svg.call(zoom);
 
+    // Add background group indicators
+    const groupBackgrounds = g.append('g')
+        .attr('class', 'group-backgrounds')
+        .style('pointer-events', 'none');
+
     // Add fixed legend container (outside of zoomable group)
     const legend = svg.append('g')
         .attr('class', 'legend')
-        .attr('transform', `translate(${containerWidth - 150}, 20)`);
+        .attr('transform', `translate(${containerWidth - 180}, 50)`)
+        .style('pointer-events', 'all');  // Ensure legend is interactive
 
     // Variables to store nodes and simulation
     let nodes = [];
@@ -64,13 +70,10 @@ function showForceDirectedGraph() {
     let color;
 
     // Add control buttons
-    const controls = container
-        .append('div')
-        .attr('class', 'controls')
-        .style('position', 'absolute')
-        .style('top', '150px')
-        .style('left', '50px')
-        .style('z-index', '1000');
+    const controls = d3.select('.controls');
+
+    // Clear any existing buttons
+    controls.selectAll('button').remove();
 
     // Add zoom control buttons
     controls.append('button')
@@ -117,7 +120,7 @@ function showForceDirectedGraph() {
             simulation
                 .force('charge', d3.forceManyBody()
                     .strength(-100)
-                    .distanceMax(200))
+                    .distanceMax(300))
                 .force('collision', d3.forceCollide().radius(d => radiusScale(d.marketCap) * 2))
                 .alpha(0.3)
                 .restart();
@@ -127,15 +130,90 @@ function showForceDirectedGraph() {
         .text('Group by Sector')
         .on('click', () => {
             if (!simulation) return;
+            
+            // Get unique sectors
+            const uniqueSectors = [...new Set(nodes.map(d => d.sector))];
+            
+            // Create a 4x3 grid of positions
+            const gridWidth = 4;
+            const gridHeight = 3;
+            const cellWidth = containerWidth / (gridWidth + 1);
+            const cellHeight = containerHeight / (gridHeight + 1);
+            
+            // Create mapping of sectors to positions
+            const sectorPositions = {};
+            
+            // Fixed positions for Finance and Technology
+            sectorPositions['Finance'] = {
+                x: (2) * cellWidth,  // 2nd column
+                y: (2) * cellHeight  // 2nd row
+            };
+            sectorPositions['Technology'] = {
+                x: (3) * cellWidth,  // 3rd column
+                y: (2) * cellHeight  // 2nd row
+            };
+            
+            // Create array of remaining positions (excluding Finance and Technology positions)
+            const remainingPositions = [];
+            for (let y = 0; y < gridHeight; y++) {
+                for (let x = 0; x < gridWidth; x++) {
+                    // Skip the positions taken by Finance and Technology
+                    if (!(x === 1 && y === 1) && !(x === 2 && y === 1)) {
+                        remainingPositions.push({
+                            x: (x + 1) * cellWidth,
+                            y: (y + 1) * cellHeight
+                        });
+                    }
+                }
+            }
+            
+            // Randomly shuffle remaining positions
+            for (let i = remainingPositions.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [remainingPositions[i], remainingPositions[j]] = [remainingPositions[j], remainingPositions[i]];
+            }
+            
+            // Assign remaining sectors to random positions
+            let positionIndex = 0;
+            uniqueSectors.forEach(sector => {
+                if (sector !== 'Finance' && sector !== 'Technology') {
+                    if (positionIndex < remainingPositions.length) {
+                        sectorPositions[sector] = remainingPositions[positionIndex];
+                        positionIndex++;
+                    } else {
+                        // If we have more sectors than positions, place them randomly
+                        sectorPositions[sector] = {
+                            x: Math.random() * containerWidth,
+                            y: Math.random() * containerHeight
+                        };
+                    }
+                }
+            });
+
+            // Update background indicators
+            groupBackgrounds.selectAll('rect')
+                .data(uniqueSectors)
+                .join(
+                    enter => enter.append('rect')
+                        .attr('width', cellWidth * 0.8)
+                        .attr('height', cellHeight * 0.8)
+                        .attr('rx', 10)
+                        .attr('ry', 10)
+                        .style('fill', d => color(d))
+                        .style('opacity', 0.1)
+                        .style('stroke', d => color(d))
+                        .style('stroke-width', 2)
+                        .style('stroke-opacity', 0.3),
+                    update => update,
+                    exit => exit.remove()
+                )
+                .attr('x', d => sectorPositions[d].x - (cellWidth * 0.4))
+                .attr('y', d => sectorPositions[d].y - (cellHeight * 0.4));
+
+            // Update forces to group nodes by sector
             simulation
-                .force('x', d3.forceX(d => {
-                    const sectorX = d.sector === 'Technology' ? containerWidth * 0.25 :
-                                  d.sector === 'Finance' ? containerWidth * 0.5 :
-                                  d.sector === 'Healthcare' ? containerWidth * 0.75 :
-                                  containerWidth * 0.5;
-                    return sectorX;
-                }).strength(0.5))
-                .force('y', d3.forceY(containerHeight / 2).strength(0.5))
+                .force('x', d3.forceX(d => sectorPositions[d.sector].x).strength(1.5))
+                .force('y', d3.forceY(d => sectorPositions[d.sector].y).strength(1.5))
                 .alpha(0.3)
                 .restart();
         });
@@ -238,7 +316,7 @@ function showForceDirectedGraph() {
                     return -(totalValue ** 0.2) * 20;
                 })
                 // .distanceMin(50)
-                .distanceMax(100))
+                .distanceMax(400))
             .force('center', d3.forceCenter(containerWidth / 2, containerHeight / 2))
             .force('collision', d3.forceCollide().radius(d => radiusScale(d.marketCap) ** 0.5))
             .force('x', d3.forceX(containerWidth / 2).strength(0.1))
@@ -249,9 +327,9 @@ function showForceDirectedGraph() {
         const link = g.append('g')
             .attr('stroke', '#000')
             .selectAll('line')
-            .data(links)
+      .data(links)
             .join('line')
-            .attr('stroke-opacity', d => (d.value || 1) * 0.7)  // Opacity scales with value
+            .attr('stroke-opacity', d => (d.value || 1) * 0.5)  // Opacity scales with value
             .attr('stroke-width', d => (d.value || 1) * 2);  // Width proportional to link value
 
         // Add a circle for each node
@@ -259,7 +337,7 @@ function showForceDirectedGraph() {
             .attr('stroke', '#666')
             .attr('stroke-width', 1)
             .selectAll('circle')
-            .data(nodes)
+      .data(nodes)
             .join('circle')
             .attr('r', d => (radiusScale(d.marketCap) ** 0.5) * 2)
             .attr('fill', d => color(d.sector))
@@ -308,9 +386,12 @@ function showForceDirectedGraph() {
         g.node().appendChild(nodeLabels.node());
         g.node().appendChild(linkLabels.node());
 
+        // Move legend to the end of SVG to ensure it's on top
+        svg.node().appendChild(legend.node());
+
         // Update positions on each tick
-        function ticked() {
-            link
+    function ticked() {
+      link
                 .attr('x1', d => d.source.x)
                 .attr('y1', d => d.source.y)
                 .attr('x2', d => d.target.x)
@@ -331,10 +412,22 @@ function showForceDirectedGraph() {
                 .attr('y', d => (d.source.y + d.target.y) / 2);
         }
 
-        // Update the resetFilter function to hide labels
+        // Function to hide node labels
+        function hideNodeLabels() {
+            nodeLabels.selectAll('text').remove();
+            linkLabels.selectAll('text').remove();
+        }
+
+        // Add a function to hide background indicators
+        function hideGroupBackgrounds() {
+            groupBackgrounds.selectAll('rect').remove();
+        }
+
+        // Update the resetFilter function to hide labels and backgrounds
         function resetFilter() {
-            // Hide node labels
+            // Hide node labels and group backgrounds
             hideNodeLabels();
+            hideGroupBackgrounds();
 
             // Reset the simulation with all data
             simulation.nodes(nodes);
@@ -407,24 +500,25 @@ function showForceDirectedGraph() {
             .on('end', dragended));
 
         // Drag functions
-        function dragstarted(event) {
-            if (!event.active) simulation.alphaTarget(0.3).restart();
-            event.subject.fx = event.subject.x;
-            event.subject.fy = event.subject.y;
-        }
-    
-        function dragged(event) {
-            event.subject.fx = event.x;
-            event.subject.fy = event.y;
-        }
-    
-        function dragended(event) {
-            if (!event.active) simulation.alphaTarget(0);
-            event.subject.fx = null;
-            event.subject.fy = null;
-        }
-    
+    function dragstarted(event) {
+      if (!event.active) simulation.alphaTarget(0.3).restart();
+      event.subject.fx = event.subject.x;
+      event.subject.fy = event.subject.y;
+    }
+  
+    function dragged(event) {
+      event.subject.fx = event.x;
+      event.subject.fy = event.y;
+    }
+  
+    function dragended(event) {
+      if (!event.active) simulation.alphaTarget(0);
+      event.subject.fx = null;
+      event.subject.fy = null;
+    }
+  
         // Create legend items
+        console.log('Creating legend items for sectors:', sectors);
         const legendItems = legend.selectAll('.legend-item')
             .data(sectors)
             .enter()
@@ -432,30 +526,68 @@ function showForceDirectedGraph() {
             .attr('class', 'legend-item')
             .attr('transform', (d, i) => `translate(0, ${i * 20})`)
             .style('cursor', 'pointer')
+            .style('pointer-events', 'all')  // Ensure each item is interactive
             .on('click', function(event, d) {
+                console.log('Legend click event:', {
+                    sector: d,
+                    currentNodes: nodes.length,
+                    totalNodes: graph.nodes.length,
+                    isFiltered: nodes.length < graph.nodes.length
+                });
                 event.stopPropagation();
                 // If we're already in filtered mode (nodes.length < original nodes length), reset
                 if (nodes.length < graph.nodes.length) {
+                    console.log('Resetting filter...');
                     resetFilter();
                 } else {
+                    console.log('Filtering by sector:', d);
                     filterBySector(d);
                     showSectorLabels(d);
                 }
             })
             .on('mouseover', function(event, d) {
+                console.log('Legend mouseover event:', {
+                    sector: d,
+                    nodes: nodes.length,
+                    links: links.length,
+                    event: event
+                });
                 // Highlight nodes of selected sector
                 node.transition()
                     .duration(200)
-                    .style('opacity', n => n.sector === d ? 1 : 0.2);
+                    .style('opacity', n => {
+                        const opacity = n.sector === d ? 1 : 0.2;
+                        console.log(`Node ${n.id} opacity:`, opacity);
+                        return opacity;
+                    });
                 
                 // Highlight links connected to selected sector nodes
                 link.transition()
                     .duration(200)
-                    .style('opacity', l => 
-                        l.source.sector === d || l.target.sector === d ? 
-                        (l.value || 1) * 0.7 : 0.1);
+                    .style('opacity', l => {
+                        const opacity = l.source.sector === d || l.target.sector === d ? 
+                            (l.value || 1) * 0.7 : 0.1;
+                        console.log(`Link ${l.source.id}-${l.target.id} opacity:`, opacity);
+                        return opacity;
+                    });
+
+                // Highlight the background indicator for the selected sector
+                groupBackgrounds.selectAll('rect')
+                    .transition()
+                    .duration(200)
+                    .style('opacity', rect => {
+                        const opacity = rect.__data__ === d ? 0.3 : 0.1;
+                        console.log(`Background ${rect.__data__} opacity:`, opacity);
+                        return opacity;
+                    });
             })
             .on('mouseout', function(event, d) {
+                console.log('Legend mouseout event:', {
+                    sector: d,
+                    nodes: nodes.length,
+                    links: links.length,
+                    event: event
+                });
                 // Reset all nodes and links to original opacity
                 node.transition()
                     .duration(200)
@@ -464,7 +596,15 @@ function showForceDirectedGraph() {
                 link.transition()
                     .duration(200)
                     .style('opacity', l => (l.value || 1) * 0.7);
+
+                // Reset background indicators opacity
+                groupBackgrounds.selectAll('rect')
+                    .transition()
+                    .duration(200)
+                    .style('opacity', 0.1);
             });
+
+        console.log('Legend items created:', legendItems.size());
 
         // Add colored rectangles
         legendItems.append('rect')
@@ -476,18 +616,14 @@ function showForceDirectedGraph() {
         legendItems.append('text')
             .attr('x', 20)
             .attr('y', 12)
-            .text(d => d)
-            .style('font-size', '12px')
-            .style('fill', '#333');
+            .text(d => d);
 
         // Add legend title
         legend.append('text')
             .attr('x', 0)
             .attr('y', -5)
             .text('Sectors')
-            .style('font-size', '14px')
-            .style('font-weight', 'bold')
-            .style('fill', '#333');
+            .attr('class', 'legend-title');
 
         // Add resize handler
         window.addEventListener('resize', function() {
@@ -711,11 +847,7 @@ function showForceDirectedGraph() {
                 .data(filteredNodes, d => d.id)
                 .join(
                     enter => enter.append('text')
-                        .attr('text-anchor', 'middle')
                         .attr('dy', d => (radiusScale(d.marketCap) ** 0.5) * 1)
-                        .style('font-size', '6px')
-                        .style('fill', '#333')
-                        .style('font-weight', 'bold')
                         .text(d => d.id),
                     update => update,
                     exit => exit.remove()
@@ -726,11 +858,7 @@ function showForceDirectedGraph() {
                 .data(filteredLinks, d => `${d.source.id}-${d.target.id}`)
                 .join(
                     enter => enter.append('text')
-                        .attr('text-anchor', 'middle')
                         .attr('dy', 0)
-                        .style('font-size', '4px')
-                        .style('fill', '#111')
-                        .style('font-weight', 'bold')
                         .text(d => d.value.toFixed(2)),
                     update => update,
                     exit => exit.remove()
@@ -762,11 +890,7 @@ function showForceDirectedGraph() {
                 .data(filteredNodes, d => d.id)
                 .join(
                     enter => enter.append('text')
-                        .attr('text-anchor', 'middle')
                         .attr('dy', d => (radiusScale(d.marketCap) ** 0.5) * 1)
-                        .style('font-size', `${8 / currentScale}px`)
-                        .style('fill', '#333')
-                        .style('font-weight', 'bold')
                         .text(d => d.id),
                     update => update,
                     exit => exit.remove()
@@ -777,23 +901,13 @@ function showForceDirectedGraph() {
                 .data(filteredLinks, d => `${d.source.id}-${d.target.id}`)
                 .join(
                     enter => enter.append('text')
-                        .attr('text-anchor', 'middle')
                         .attr('dy', 0)
-                        .style('font-size', `${6 / currentScale}px`)
-                        .style('fill', '#111')
-                        .style('font-weight', 'bold')
                         .text(d => d.value.toFixed(2)),
                     update => update,
                     exit => exit.remove()
                 );
         }
-
-        // Function to hide node labels
-        function hideNodeLabels() {
-            nodeLabels.selectAll('text').remove();
-            linkLabels.selectAll('text').remove();
-        }
     }).catch(error => {
         console.error('Error loading data:', error);
     });
-}
+  }

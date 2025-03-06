@@ -1,0 +1,5562 @@
+{
+    "nodes": [
+        {
+            "id": "UFPI",
+            "group": "Basic Materials",
+            "marketCap": 7.024021885,
+            "price": "$115.67"
+        },
+        {
+            "id": "IPX",
+            "group": "Basic Materials",
+            "marketCap": 0.682213104,
+            "price": "$26.52"
+        },
+        {
+            "id": "EU",
+            "group": "Basic Materials",
+            "marketCap": 0.541517878,
+            "price": "$2.91"
+        },
+        {
+            "id": "COST",
+            "group": "Consumer Discretionary",
+            "marketCap": 469.795930076,
+            "price": "$1058.34"
+        },
+        {
+            "id": "CTAS",
+            "group": "Consumer Discretionary",
+            "marketCap": 82.887923633,
+            "price": "$205.40"
+        },
+        {
+            "id": "CPRT",
+            "group": "Consumer Discretionary",
+            "marketCap": 57.06978725,
+            "price": "$59.23"
+        },
+        {
+            "id": "PCAR",
+            "group": "Consumer Discretionary",
+            "marketCap": 55.623045774,
+            "price": "$106.09"
+        },
+        {
+            "id": "PAYX",
+            "group": "Consumer Discretionary",
+            "marketCap": 52.605215111,
+            "price": "$146.10"
+        },
+        {
+            "id": "ROST",
+            "group": "Consumer Discretionary",
+            "marketCap": 46.60909766,
+            "price": "$141.27"
+        },
+        {
+            "id": "TSCO",
+            "group": "Consumer Discretionary",
+            "marketCap": 29.647760019,
+            "price": "$54.97"
+        },
+        {
+            "id": "CDW",
+            "group": "Consumer Discretionary",
+            "marketCap": 25.552051248,
+            "price": "$191.74"
+        },
+        {
+            "id": "DKNG",
+            "group": "Consumer Discretionary",
+            "marketCap": 21.182548982,
+            "price": "$43.44"
+        },
+        {
+            "id": "Z",
+            "group": "Consumer Discretionary",
+            "marketCap": 20.160825396,
+            "price": "$86.32"
+        },
+        {
+            "id": "ZG",
+            "group": "Consumer Discretionary",
+            "marketCap": 19.581598717,
+            "price": "$83.84"
+        },
+        {
+            "id": "NWS",
+            "group": "Consumer Discretionary",
+            "marketCap": 19.387919236,
+            "price": "$34.17"
+        },
+        {
+            "id": "NWSA",
+            "group": "Consumer Discretionary",
+            "marketCap": 16.709810404,
+            "price": "$29.45"
+        },
+        {
+            "id": "CASY",
+            "group": "Consumer Discretionary",
+            "marketCap": 15.869610213,
+            "price": "$427.55"
+        },
+        {
+            "id": "AKAM",
+            "group": "Consumer Discretionary",
+            "marketCap": 15.230011841,
+            "price": "$101.38"
+        },
+        {
+            "id": "POOL",
+            "group": "Consumer Discretionary",
+            "marketCap": 12.799976506,
+            "price": "$336.35"
+        },
+        {
+            "id": "CART",
+            "group": "Consumer Discretionary",
+            "marketCap": 12.765101419,
+            "price": "$49.69"
+        },
+        {
+            "id": "LKQ",
+            "group": "Consumer Discretionary",
+            "marketCap": 9.797889234,
+            "price": "$37.69"
+        },
+        {
+            "id": "CHDN",
+            "group": "Consumer Discretionary",
+            "marketCap": 8.948963184,
+            "price": "$121.76"
+        },
+        {
+            "id": "WING",
+            "group": "Consumer Discretionary",
+            "marketCap": 8.758426989,
+            "price": "$299.82"
+        },
+        {
+            "id": "TTEK",
+            "group": "Consumer Discretionary",
+            "marketCap": 8.644163806,
+            "price": "$32.25"
+        },
+        {
+            "id": "HAS",
+            "group": "Consumer Discretionary",
+            "marketCap": 8.382640208,
+            "price": "$60.09"
+        },
+        {
+            "id": "SFM",
+            "group": "Consumer Staples",
+            "marketCap": 16.611553672,
+            "price": "$166.13"
+        },
+        {
+            "id": "COKE",
+            "group": "Consumer Staples",
+            "marketCap": 12.399865057,
+            "price": "$1415.40"
+        },
+        {
+            "id": "FRPT",
+            "group": "Consumer Staples",
+            "marketCap": 6.346183854,
+            "price": "$130.75"
+        },
+        {
+            "id": "JJSF",
+            "group": "Consumer Staples",
+            "marketCap": 2.476626576,
+            "price": "$127.07"
+        },
+        {
+            "id": "KOSS",
+            "group": "Consumer Staples",
+            "marketCap": 0.06084891,
+            "price": "$6.49"
+        },
+        {
+            "id": "PAA",
+            "group": "Energy",
+            "marketCap": 13.876353843,
+            "price": "$19.72"
+        },
+        {
+            "id": "WWD",
+            "group": "Energy",
+            "marketCap": 11.472484587,
+            "price": "$193.27"
+        },
+        {
+            "id": "CHRD",
+            "group": "Energy",
+            "marketCap": 6.99393753,
+            "price": "$114.41"
+        },
+        {
+            "id": "LFUS",
+            "group": "Energy",
+            "marketCap": 5.948576768,
+            "price": "$239.72"
+        },
+        {
+            "id": "PAGP",
+            "group": "Energy",
+            "marketCap": 4.13295708,
+            "price": "$20.93"
+        },
+        {
+            "id": "MGEE",
+            "group": "Energy",
+            "marketCap": 3.260850062,
+            "price": "$90.06"
+        },
+        {
+            "id": "DMLP",
+            "group": "Energy",
+            "marketCap": 1.516055686,
+            "price": "$32.025"
+        },
+        {
+            "id": "CLMT",
+            "group": "Energy",
+            "marketCap": 1.364157187,
+            "price": "$15.88"
+        },
+        {
+            "id": "FCEL",
+            "group": "Energy",
+            "marketCap": 0.143761496,
+            "price": "$7.03"
+        },
+        {
+            "id": "TUSK",
+            "group": "Energy",
+            "marketCap": 0.142457012,
+            "price": "$2.96"
+        },
+        {
+            "id": "KLXE",
+            "group": "Energy",
+            "marketCap": 0.08177263,
+            "price": "$4.85"
+        },
+        {
+            "id": "HOOD",
+            "group": "Finance",
+            "marketCap": 47.151263251,
+            "price": "$53.34"
+        },
+        {
+            "id": "NDAQ",
+            "group": "Finance",
+            "marketCap": 46.147288025,
+            "price": "$80.29"
+        },
+        {
+            "id": "HBANM",
+            "group": "Finance",
+            "marketCap": 32.862593687,
+            "price": "$22.62"
+        },
+        {
+            "id": "FCNCA",
+            "group": "Finance",
+            "marketCap": 30.16051185,
+            "price": "$2155.94"
+        },
+        {
+            "id": "FITB",
+            "group": "Finance",
+            "marketCap": 29.503905728,
+            "price": "$44.00"
+        },
+        {
+            "id": "LPLA",
+            "group": "Finance",
+            "marketCap": 27.137857021,
+            "price": "$362.42"
+        },
+        {
+            "id": "AFRM",
+            "group": "Finance",
+            "marketCap": 24.814764229,
+            "price": "$78.02"
+        },
+        {
+            "id": "HBAN",
+            "group": "Finance",
+            "marketCap": 24.494400069,
+            "price": "$16.86"
+        },
+        {
+            "id": "TPG",
+            "group": "Finance",
+            "marketCap": 22.186396027,
+            "price": "$60.79"
+        },
+        {
+            "id": "FITBI",
+            "group": "Finance",
+            "marketCap": 17.440831545,
+            "price": "$26.01"
+        },
+        {
+            "id": "FITBP",
+            "group": "Finance",
+            "marketCap": 16.629474138,
+            "price": "$24.80"
+        },
+        {
+            "id": "SLMBP",
+            "group": "Finance",
+            "marketCap": 16.02245704,
+            "price": "$75.46"
+        },
+        {
+            "id": "ARCC",
+            "group": "Finance",
+            "marketCap": 15.245989932,
+            "price": "$22.705"
+        },
+        {
+            "id": "MORN",
+            "group": "Finance",
+            "marketCap": 13.788550717,
+            "price": "$321.53"
+        },
+        {
+            "id": "EWBC",
+            "group": "Finance",
+            "marketCap": 13.720126283,
+            "price": "$98.97"
+        },
+        {
+            "id": "PNFP",
+            "group": "Finance",
+            "marketCap": 9.53205151,
+            "price": "$123.40"
+        },
+        {
+            "id": "WTFC",
+            "group": "Finance",
+            "marketCap": 8.802902888,
+            "price": "$132.39"
+        },
+        {
+            "id": "HLNE",
+            "group": "Finance",
+            "marketCap": 8.681284772,
+            "price": "$156.59"
+        },
+        {
+            "id": "ZION",
+            "group": "Finance",
+            "marketCap": 8.395905631,
+            "price": "$56.84"
+        },
+        {
+            "id": "ONB",
+            "group": "Finance",
+            "marketCap": 7.69998408,
+            "price": "$24.14"
+        },
+        {
+            "id": "BPOP",
+            "group": "Finance",
+            "marketCap": 7.382323949,
+            "price": "$103.53"
+        },
+        {
+            "id": "BOKF",
+            "group": "Finance",
+            "marketCap": 7.23448099,
+            "price": "$112.83"
+        },
+        {
+            "id": "STEP",
+            "group": "Finance",
+            "marketCap": 6.951660661,
+            "price": "$59.94"
+        },
+        {
+            "id": "SLM",
+            "group": "Finance",
+            "marketCap": 6.180939894,
+            "price": "$29.11"
+        },
+        {
+            "id": "ISRG",
+            "group": "Health Care",
+            "marketCap": 211.016092751,
+            "price": "$591.65"
+        },
+        {
+            "id": "AMGN",
+            "group": "Health Care",
+            "marketCap": 159.464457605,
+            "price": "$296.66"
+        },
+        {
+            "id": "REGN",
+            "group": "Health Care",
+            "marketCap": 72.751202884,
+            "price": "$665.46"
+        },
+        {
+            "id": "DXCM",
+            "group": "Health Care",
+            "marketCap": 33.739629788,
+            "price": "$86.38"
+        },
+        {
+            "id": "ILMN",
+            "group": "Health Care",
+            "marketCap": 15.967848,
+            "price": "$100.68"
+        },
+        {
+            "id": "ALGN",
+            "group": "Health Care",
+            "marketCap": 15.715962191,
+            "price": "$210.52"
+        },
+        {
+            "id": "INSM",
+            "group": "Health Care",
+            "marketCap": 14.292538381,
+            "price": "$79.89"
+        },
+        {
+            "id": "ITCI",
+            "group": "Health Care",
+            "marketCap": 13.523541659,
+            "price": "$127.56"
+        },
+        {
+            "id": "TECH",
+            "group": "Health Care",
+            "marketCap": 10.803712256,
+            "price": "$68.34"
+        },
+        {
+            "id": "PCVX",
+            "group": "Health Care",
+            "marketCap": 10.610309161,
+            "price": "$85.13"
+        },
+        {
+            "id": "HSIC",
+            "group": "Health Care",
+            "marketCap": 9.660306659,
+            "price": "$77.48"
+        },
+        {
+            "id": "MASI",
+            "group": "Health Care",
+            "marketCap": 9.471326125,
+            "price": "$176.90"
+        },
+        {
+            "id": "RGEN",
+            "group": "Health Care",
+            "marketCap": 8.37543512,
+            "price": "$149.49"
+        },
+        {
+            "id": "HALO",
+            "group": "Health Care",
+            "marketCap": 7.29392391,
+            "price": "$57.33"
+        },
+        {
+            "id": "RVMD",
+            "group": "Health Care",
+            "marketCap": 6.972693757,
+            "price": "$41.45"
+        },
+        {
+            "id": "LEGN",
+            "group": "Health Care",
+            "marketCap": 6.299579142,
+            "price": "$34.63"
+        },
+        {
+            "id": "NUVL",
+            "group": "Health Care",
+            "marketCap": 5.890257141,
+            "price": "$82.90"
+        },
+        {
+            "id": "OPCH",
+            "group": "Health Care",
+            "marketCap": 5.369218059,
+            "price": "$31.55"
+        },
+        {
+            "id": "HON",
+            "group": "Industrials",
+            "marketCap": 134.562192817,
+            "price": "$206.94"
+        },
+        {
+            "id": "CSX",
+            "group": "Industrials",
+            "marketCap": 63.849958156,
+            "price": "$33.11"
+        },
+        {
+            "id": "AXON",
+            "group": "Industrials",
+            "marketCap": 51.034271386,
+            "price": "$669.26"
+        },
+        {
+            "id": "BKR",
+            "group": "Industrials",
+            "marketCap": 46.644169442,
+            "price": "$47.11"
+        },
+        {
+            "id": "ODFL",
+            "group": "Industrials",
+            "marketCap": 43.931387983,
+            "price": "$205.77"
+        },
+        {
+            "id": "FWONK",
+            "group": "Industrials",
+            "marketCap": 24.88802353,
+            "price": "$100.07"
+        },
+        {
+            "id": "FOXA",
+            "group": "Industrials",
+            "marketCap": 24.208513339,
+            "price": "$53.39"
+        },
+        {
+            "id": "FWONA",
+            "group": "Industrials",
+            "marketCap": 23.060033394,
+            "price": "$92.72"
+        },
+        {
+            "id": "FOX",
+            "group": "Industrials",
+            "marketCap": 22.920778222,
+            "price": "$50.55"
+        },
+        {
+            "id": "STLD",
+            "group": "Industrials",
+            "marketCap": 20.531760026,
+            "price": "$134.86"
+        },
+        {
+            "id": "TER",
+            "group": "Industrials",
+            "marketCap": 18.357743997,
+            "price": "$112.72"
+        },
+        {
+            "id": "TRMB",
+            "group": "Industrials",
+            "marketCap": 18.146827347,
+            "price": "$73.83"
+        },
+        {
+            "id": "JBHT",
+            "group": "Industrials",
+            "marketCap": 16.889017295,
+            "price": "$167.50"
+        },
+        {
+            "id": "ENTG",
+            "group": "Industrials",
+            "marketCap": 15.966524396,
+            "price": "$105.74"
+        },
+        {
+            "id": "NDSN",
+            "group": "Industrials",
+            "marketCap": 12.353092193,
+            "price": "$216.66"
+        },
+        {
+            "id": "FTAI",
+            "group": "Industrials",
+            "marketCap": 12.255712137,
+            "price": "$119.51"
+        },
+        {
+            "id": "AAON",
+            "group": "Industrials",
+            "marketCap": 9.165090515,
+            "price": "$112.76"
+        },
+        {
+            "id": "MIDD",
+            "group": "Industrials",
+            "marketCap": 8.850050354,
+            "price": "$164.52"
+        },
+        {
+            "id": "MKSI",
+            "group": "Industrials",
+            "marketCap": 7.445954832,
+            "price": "$110.64"
+        },
+        {
+            "id": "LLYVK",
+            "group": "Industrials",
+            "marketCap": 7.018891289,
+            "price": "$76.51"
+        },
+        {
+            "id": "WSC",
+            "group": "Industrials",
+            "marketCap": 7.004233669,
+            "price": "$37.91"
+        },
+        {
+            "id": "LLYVA",
+            "group": "Industrials",
+            "marketCap": 6.871192753,
+            "price": "$74.90"
+        },
+        {
+            "id": "CGNX",
+            "group": "Industrials",
+            "marketCap": 6.795435354,
+            "price": "$39.62"
+        },
+        {
+            "id": "LSTR",
+            "group": "Industrials",
+            "marketCap": 5.694325152,
+            "price": "$161.17"
+        },
+        {
+            "id": "CSWI",
+            "group": "Industrials",
+            "marketCap": 5.443759829,
+            "price": "$324.36"
+        },
+        {
+            "id": "BCPC",
+            "group": "Industrials",
+            "marketCap": 5.199609174,
+            "price": "$159.95"
+        },
+        {
+            "id": "STRL",
+            "group": "Industrials",
+            "marketCap": 4.449714652,
+            "price": "$144.88"
+        },
+        {
+            "id": "ITRI",
+            "group": "Industrials",
+            "marketCap": 4.441322645,
+            "price": "$98.50"
+        },
+        {
+            "id": "IESC",
+            "group": "Industrials",
+            "marketCap": 4.359444677,
+            "price": "$217.90"
+        },
+        {
+            "id": "ROAD",
+            "group": "Industrials",
+            "marketCap": 3.831780075,
+            "price": "$81.21"
+        },
+        {
+            "id": "HEES",
+            "group": "Industrials",
+            "marketCap": 3.180025206,
+            "price": "$86.86"
+        },
+        {
+            "id": "ENVX",
+            "group": "Miscellaneous",
+            "marketCap": 1.881219046,
+            "price": "$10.57"
+        },
+        {
+            "id": "FLNC",
+            "group": "Miscellaneous",
+            "marketCap": 1.267843318,
+            "price": "$7.00"
+        },
+        {
+            "id": "CTLP",
+            "group": "Miscellaneous",
+            "marketCap": 0.769054075,
+            "price": "$10.53"
+        },
+        {
+            "id": "AGNCN",
+            "group": "Real Estate",
+            "marketCap": 22.75208731,
+            "price": "$25.69"
+        },
+        {
+            "id": "REG",
+            "group": "Real Estate",
+            "marketCap": 13.50763157,
+            "price": "$74.42"
+        },
+        {
+            "id": "GLPI",
+            "group": "Real Estate",
+            "marketCap": 13.379332124,
+            "price": "$48.76"
+        },
+        {
+            "id": "HST",
+            "group": "Real Estate",
+            "marketCap": 11.526992728,
+            "price": "$16.49"
+        },
+        {
+            "id": "LOPE",
+            "group": "Real Estate",
+            "marketCap": 5.304532142,
+            "price": "$182.00"
+        },
+        {
+            "id": "PECO",
+            "group": "Real Estate",
+            "marketCap": 4.550912,
+            "price": "$37.12"
+        },
+        {
+            "id": "SBRA",
+            "group": "Real Estate",
+            "marketCap": 3.842169713,
+            "price": "$16.24"
+        },
+        {
+            "id": "PCH",
+            "group": "Real Estate",
+            "marketCap": 3.51598032,
+            "price": "$44.64"
+        },
+        {
+            "id": "LAUR",
+            "group": "Real Estate",
+            "marketCap": 3.000136976,
+            "price": "$19.91"
+        },
+        {
+            "id": "STRA",
+            "group": "Real Estate",
+            "marketCap": 2.471439869,
+            "price": "$100.59"
+        },
+        {
+            "id": "ROIC",
+            "group": "Real Estate",
+            "marketCap": 2.250068736,
+            "price": "$17.49"
+        },
+        {
+            "id": "UNIT",
+            "group": "Real Estate",
+            "marketCap": 1.357276865,
+            "price": "$5.56"
+        },
+        {
+            "id": "UDMY",
+            "group": "Real Estate",
+            "marketCap": 1.123440911,
+            "price": "$7.70"
+        },
+        {
+            "id": "NYMT",
+            "group": "Real Estate",
+            "marketCap": 0.559780995,
+            "price": "$6.18"
+        },
+        {
+            "id": "LINC",
+            "group": "Real Estate",
+            "marketCap": 0.550570631,
+            "price": "$17.49"
+        },
+        {
+            "id": "AAPL",
+            "group": "Technology",
+            "marketCap": 3494.43462126,
+            "price": "$232.62"
+        },
+        {
+            "id": "MSFT",
+            "group": "Technology",
+            "marketCap": 3058.637650768,
+            "price": "$411.44"
+        },
+        {
+            "id": "GOOG",
+            "group": "Technology",
+            "marketCap": 2280.3833,
+            "price": "$187.07"
+        },
+        {
+            "id": "GOOGL",
+            "group": "Technology",
+            "marketCap": 2259.0508,
+            "price": "$185.32"
+        },
+        {
+            "id": "META",
+            "group": "Technology",
+            "marketCap": 1823.727938947,
+            "price": "$719.80"
+        },
+        {
+            "id": "AVGO",
+            "group": "Technology",
+            "marketCap": 1101.716190906,
+            "price": "$235.04"
+        },
+        {
+            "id": "QCOM",
+            "group": "Technology",
+            "marketCap": 190.22094,
+            "price": "$171.99"
+        },
+        {
+            "id": "INTU",
+            "group": "Technology",
+            "marketCap": 164.0669058,
+            "price": "$585.88"
+        },
+        {
+            "id": "TXN",
+            "group": "Technology",
+            "marketCap": 163.51482806,
+            "price": "$179.25"
+        },
+        {
+            "id": "AMAT",
+            "group": "Technology",
+            "marketCap": 149.067025682,
+            "price": "$183.20"
+        },
+        {
+            "id": "PANW",
+            "group": "Technology",
+            "marketCap": 128.280538,
+            "price": "$195.49"
+        },
+        {
+            "id": "APP",
+            "group": "Technology",
+            "marketCap": 125.930824451,
+            "price": "$375.25"
+        },
+        {
+            "id": "LRCX",
+            "group": "Technology",
+            "marketCap": 106.87769812,
+            "price": "$83.26"
+        },
+        {
+            "id": "CRWD",
+            "group": "Technology",
+            "marketCap": 106.317857876,
+            "price": "$431.64"
+        },
+        {
+            "id": "MU",
+            "group": "Technology",
+            "marketCap": 104.821295363,
+            "price": "$94.08"
+        },
+        {
+            "id": "ADI",
+            "group": "Technology",
+            "marketCap": 100.976557915,
+            "price": "$203.46"
+        },
+        {
+            "id": "KLAC",
+            "group": "Technology",
+            "marketCap": 100.810543251,
+            "price": "$758.62"
+        },
+        {
+            "id": "MRVL",
+            "group": "Technology",
+            "marketCap": 94.421536,
+            "price": "$109.12"
+        },
+        {
+            "id": "INTC",
+            "group": "Technology",
+            "marketCap": 90.8001,
+            "price": "$20.97"
+        },
+        {
+            "id": "CDNS",
+            "group": "Technology",
+            "marketCap": 83.34029781,
+            "price": "$303.87"
+        },
+        {
+            "id": "FTNT",
+            "group": "Technology",
+            "marketCap": 83.029820774,
+            "price": "$108.33"
+        },
+        {
+            "id": "SNPS",
+            "group": "Technology",
+            "marketCap": 81.793640504,
+            "price": "$529.14"
+        },
+        {
+            "id": "WDAY",
+            "group": "Technology",
+            "marketCap": 69.958,
+            "price": "$263.00"
+        },
+        {
+            "id": "TTD",
+            "group": "Technology",
+            "marketCap": 59.332520082,
+            "price": "$120.21"
+        },
+        {
+            "id": "DDOG",
+            "group": "Technology",
+            "marketCap": 49.402526658,
+            "price": "$145.42"
+        },
+        {
+            "id": "VRSK",
+            "group": "Technology",
+            "marketCap": 41.558289586,
+            "price": "$294.30"
+        },
+        {
+            "id": "EA",
+            "group": "Technology",
+            "marketCap": 34.75335616,
+            "price": "$133.35"
+        },
+        {
+            "id": "ANSS",
+            "group": "Technology",
+            "marketCap": 29.858037794,
+            "price": "$341.43"
+        },
+        {
+            "id": "MCHP",
+            "group": "Technology",
+            "marketCap": 28.27852139,
+            "price": "$52.58"
+        },
+        {
+            "id": "NTAP",
+            "group": "Technology",
+            "marketCap": 24.307316053,
+            "price": "$119.56"
+        },
+        {
+            "id": "GFS",
+            "group": "Technology",
+            "marketCap": 22.197282419,
+            "price": "$40.10"
+        },
+        {
+            "id": "VRSN",
+            "group": "Technology",
+            "marketCap": 21.851218,
+            "price": "$227.38"
+        },
+        {
+            "id": "SSNC",
+            "group": "Technology",
+            "marketCap": 21.476777709,
+            "price": "$86.71"
+        },
+        {
+            "id": "MDB",
+            "group": "Technology",
+            "marketCap": 21.307526928,
+            "price": "$286.12"
+        },
+        {
+            "id": "CHTR",
+            "group": "Telecommunications",
+            "marketCap": 49.811840163,
+            "price": "$350.92"
+        },
+        {
+            "id": "FFIV",
+            "group": "Telecommunications",
+            "marketCap": 17.779379228,
+            "price": "$308.39"
+        },
+        {
+            "id": "ROKU",
+            "group": "Telecommunications",
+            "marketCap": 12.015236034,
+            "price": "$82.75"
+        },
+        {
+            "id": "LBRDK",
+            "group": "Telecommunications",
+            "marketCap": 11.217860822,
+            "price": "$78.53"
+        },
+        {
+            "id": "LBRDA",
+            "group": "Telecommunications",
+            "marketCap": 11.132151965,
+            "price": "$77.93"
+        },
+        {
+            "id": "FYBR",
+            "group": "Telecommunications",
+            "marketCap": 8.90726655,
+            "price": "$35.77"
+        },
+        {
+            "id": "ZD",
+            "group": "Telecommunications",
+            "marketCap": 2.319998524,
+            "price": "$54.28"
+        },
+        {
+            "id": "LILA",
+            "group": "Telecommunications",
+            "marketCap": 1.355263,
+            "price": "$6.89"
+        },
+        {
+            "id": "LILAK",
+            "group": "Telecommunications",
+            "marketCap": 1.351329,
+            "price": "$6.87"
+        },
+        {
+            "id": "MATW",
+            "group": "Telecommunications",
+            "marketCap": 0.76430717,
+            "price": "$24.68"
+        },
+        {
+            "id": "REKR",
+            "group": "Telecommunications",
+            "marketCap": 0.190465408,
+            "price": "$2.03"
+        },
+        {
+            "id": "BWEN",
+            "group": "Telecommunications",
+            "marketCap": 0.03781502,
+            "price": "$1.71"
+        },
+        {
+            "id": "AEP",
+            "group": "Utilities",
+            "marketCap": 54.25775633,
+            "price": "$101.88"
+        },
+        {
+            "id": "LNT",
+            "group": "Utilities",
+            "marketCap": 15.475497873,
+            "price": "$60.31"
+        },
+        {
+            "id": "EVRG",
+            "group": "Utilities",
+            "marketCap": 15.229022044,
+            "price": "$66.22"
+        },
+        {
+            "id": "NTGR",
+            "group": "Utilities",
+            "marketCap": 0.889273405,
+            "price": "$30.91"
+        },
+        {
+            "id": "CLNE",
+            "group": "Utilities",
+            "marketCap": 0.732937425,
+            "price": "$3.28"
+        },
+        {
+            "id": "CLFD",
+            "group": "Utilities",
+            "marketCap": 0.482309358,
+            "price": "$34.13"
+        },
+        {
+            "id": "CDZI",
+            "group": "Utilities",
+            "marketCap": 0.374416848,
+            "price": "$4.98"
+        },
+        {
+            "id": "PCYO",
+            "group": "Utilities",
+            "marketCap": 0.280255221,
+            "price": "$11.64"
+        }
+    ],
+    "links": [
+        {
+            "source": "CPRT",
+            "target": "UFPI",
+            "value": 0.9644891892679642
+        },
+        {
+            "source": "RVMD",
+            "target": "UFPI",
+            "value": 0.9558711454799516
+        },
+        {
+            "source": "NUVL",
+            "target": "EU",
+            "value": 0.9836405053648798
+        },
+        {
+            "source": "CGNX",
+            "target": "EU",
+            "value": 0.9567042699147988
+        },
+        {
+            "source": "TER",
+            "target": "EU",
+            "value": 0.9672888981082975
+        },
+        {
+            "source": "MDB",
+            "target": "EU",
+            "value": 0.9847624277624832
+        },
+        {
+            "source": "MCHP",
+            "target": "EU",
+            "value": 0.957409386743052
+        },
+        {
+            "source": "GFS",
+            "target": "EU",
+            "value": 0.9522111769208348
+        },
+        {
+            "source": "SNPS",
+            "target": "EU",
+            "value": 0.9713224534264372
+        },
+        {
+            "source": "LOPE",
+            "target": "IPX",
+            "value": 0.9516387713625836
+        },
+        {
+            "source": "TRMB",
+            "target": "CART",
+            "value": 0.9528513072359224
+        },
+        {
+            "source": "LKQ",
+            "target": "POOL",
+            "value": 0.9716527447273806
+        },
+        {
+            "source": "CPRT",
+            "target": "POOL",
+            "value": 0.962129253589884
+        },
+        {
+            "source": "CDW",
+            "target": "POOL",
+            "value": 0.9572447231561798
+        },
+        {
+            "source": "LFUS",
+            "target": "POOL",
+            "value": 0.9836563800378167
+        },
+        {
+            "source": "PAGP",
+            "target": "POOL",
+            "value": 0.9555029151260236
+        },
+        {
+            "source": "PNFP",
+            "target": "POOL",
+            "value": 0.9527666104682228
+        },
+        {
+            "source": "FITB",
+            "target": "POOL",
+            "value": 0.9579631593833005
+        },
+        {
+            "source": "HBAN",
+            "target": "POOL",
+            "value": 0.9736671689819832
+        },
+        {
+            "source": "TPG",
+            "target": "POOL",
+            "value": 0.97863272724176
+        },
+        {
+            "source": "HALO",
+            "target": "POOL",
+            "value": 0.9568099632982124
+        },
+        {
+            "source": "WSC",
+            "target": "POOL",
+            "value": 0.9776892981008424
+        },
+        {
+            "source": "ROAD",
+            "target": "POOL",
+            "value": 0.9754300897895286
+        },
+        {
+            "source": "TER",
+            "target": "POOL",
+            "value": 0.9593573685928798
+        },
+        {
+            "source": "ENTG",
+            "target": "POOL",
+            "value": 0.9757077761074016
+        },
+        {
+            "source": "CTLP",
+            "target": "POOL",
+            "value": 0.9579896855780488
+        },
+        {
+            "source": "NYMT",
+            "target": "POOL",
+            "value": 0.9528992976508318
+        },
+        {
+            "source": "LAUR",
+            "target": "POOL",
+            "value": 0.9724923079418069
+        },
+        {
+            "source": "MSFT",
+            "target": "POOL",
+            "value": 0.9584385865004588
+        },
+        {
+            "source": "AMAT",
+            "target": "POOL",
+            "value": 0.9645198999214056
+        },
+        {
+            "source": "LRCX",
+            "target": "POOL",
+            "value": 0.9545744291669752
+        },
+        {
+            "source": "ADI",
+            "target": "POOL",
+            "value": 0.9630300796459564
+        },
+        {
+            "source": "KLAC",
+            "target": "POOL",
+            "value": 0.9628171142831408
+        },
+        {
+            "source": "REKR",
+            "target": "POOL",
+            "value": 0.9640349511611296
+        },
+        {
+            "source": "FYBR",
+            "target": "POOL",
+            "value": 0.9653275544671456
+        },
+        {
+            "source": "CGNX",
+            "target": "AKAM",
+            "value": 0.9570503077722824
+        },
+        {
+            "source": "NWS",
+            "target": "NWSA",
+            "value": 0.9916222008689134
+        },
+        {
+            "source": "SNPS",
+            "target": "CASY",
+            "value": 0.9601793837940236
+        },
+        {
+            "source": "STEP",
+            "target": "LKQ",
+            "value": 0.961365413692474
+        },
+        {
+            "source": "FITB",
+            "target": "LKQ",
+            "value": 0.9592669819846532
+        },
+        {
+            "source": "TPG",
+            "target": "LKQ",
+            "value": 0.9667181790230136
+        },
+        {
+            "source": "IESC",
+            "target": "LKQ",
+            "value": 0.96553465817731
+        },
+        {
+            "source": "ROAD",
+            "target": "LKQ",
+            "value": 0.975310522939194
+        },
+        {
+            "source": "ENTG",
+            "target": "LKQ",
+            "value": 0.953144684545187
+        },
+        {
+            "source": "SNPS",
+            "target": "LKQ",
+            "value": 0.9775780994492492
+        },
+        {
+            "source": "FTNT",
+            "target": "LKQ",
+            "value": 0.9518573619874298
+        },
+        {
+            "source": "NTGR",
+            "target": "LKQ",
+            "value": 0.9825450256737904
+        },
+        {
+            "source": "TTEK",
+            "target": "CHDN",
+            "value": 0.9839495855642332
+        },
+        {
+            "source": "WWD",
+            "target": "CHDN",
+            "value": 0.9826169831714312
+        },
+        {
+            "source": "NDAQ",
+            "target": "CHDN",
+            "value": 0.9582743253515889
+        },
+        {
+            "source": "TECH",
+            "target": "CHDN",
+            "value": 0.9558605112273438
+        },
+        {
+            "source": "RGEN",
+            "target": "CHDN",
+            "value": 0.9714696237605108
+        },
+        {
+            "source": "CGNX",
+            "target": "CHDN",
+            "value": 0.973140120781272
+        },
+        {
+            "source": "MKSI",
+            "target": "CHDN",
+            "value": 0.9701674657536984
+        },
+        {
+            "source": "IESC",
+            "target": "CHDN",
+            "value": 0.9858919113447168
+        },
+        {
+            "source": "TER",
+            "target": "CHDN",
+            "value": 0.9646205692090466
+        },
+        {
+            "source": "ENTG",
+            "target": "CHDN",
+            "value": 0.966048296796004
+        },
+        {
+            "source": "TRMB",
+            "target": "CHDN",
+            "value": 0.9636943396681524
+        },
+        {
+            "source": "HST",
+            "target": "CHDN",
+            "value": 0.9840724253853352
+        },
+        {
+            "source": "PECO",
+            "target": "CHDN",
+            "value": 0.952548440484522
+        },
+        {
+            "source": "DDOG",
+            "target": "CHDN",
+            "value": 0.9636278818224808
+        },
+        {
+            "source": "AVGO",
+            "target": "CHDN",
+            "value": 0.9564150035375216
+        },
+        {
+            "source": "QCOM",
+            "target": "CHDN",
+            "value": 0.9601386133456888
+        },
+        {
+            "source": "INTU",
+            "target": "CHDN",
+            "value": 0.96161227153611
+        },
+        {
+            "source": "AMAT",
+            "target": "CHDN",
+            "value": 0.960598872534724
+        },
+        {
+            "source": "LRCX",
+            "target": "CHDN",
+            "value": 0.9645136389791787
+        },
+        {
+            "source": "KLAC",
+            "target": "CHDN",
+            "value": 0.9837576275581728
+        },
+        {
+            "source": "PAYX",
+            "target": "WING",
+            "value": 0.960438673037325
+        },
+        {
+            "source": "TPG",
+            "target": "WING",
+            "value": 0.9526077568500364
+        },
+        {
+            "source": "REGN",
+            "target": "WING",
+            "value": 0.950379468642032
+        },
+        {
+            "source": "DXCM",
+            "target": "WING",
+            "value": 0.961078773845314
+        },
+        {
+            "source": "CGNX",
+            "target": "WING",
+            "value": 0.974729479560758
+        },
+        {
+            "source": "MKSI",
+            "target": "WING",
+            "value": 0.966377736248063
+        },
+        {
+            "source": "CSWI",
+            "target": "WING",
+            "value": 0.9576294749393656
+        },
+        {
+            "source": "IESC",
+            "target": "WING",
+            "value": 0.956396139520689
+        },
+        {
+            "source": "HEES",
+            "target": "WING",
+            "value": 0.9580917662978976
+        },
+        {
+            "source": "MIDD",
+            "target": "WING",
+            "value": 0.9637207628065116
+        },
+        {
+            "source": "TER",
+            "target": "WING",
+            "value": 0.9795122347399052
+        },
+        {
+            "source": "ENTG",
+            "target": "WING",
+            "value": 0.9625180809526604
+        },
+        {
+            "source": "TRMB",
+            "target": "WING",
+            "value": 0.952150844402668
+        },
+        {
+            "source": "EA",
+            "target": "WING",
+            "value": 0.9561885355974638
+        },
+        {
+            "source": "CDNS",
+            "target": "WING",
+            "value": 0.9513344500101276
+        },
+        {
+            "source": "AVGO",
+            "target": "WING",
+            "value": 0.9789688657218848
+        },
+        {
+            "source": "AAPL",
+            "target": "WING",
+            "value": 0.9708828074301852
+        },
+        {
+            "source": "AMAT",
+            "target": "WING",
+            "value": 0.9818184326444692
+        },
+        {
+            "source": "LRCX",
+            "target": "WING",
+            "value": 0.952947285151184
+        },
+        {
+            "source": "ADI",
+            "target": "WING",
+            "value": 0.9614433723950954
+        },
+        {
+            "source": "KLAC",
+            "target": "WING",
+            "value": 0.9723865261779676
+        },
+        {
+            "source": "FFIV",
+            "target": "WING",
+            "value": 0.9550030716977936
+        },
+        {
+            "source": "HAS",
+            "target": "TTEK",
+            "value": 0.9680124198713568
+        },
+        {
+            "source": "ZG",
+            "target": "TTEK",
+            "value": 0.951982198455661
+        },
+        {
+            "source": "PCAR",
+            "target": "TTEK",
+            "value": 0.9566334422007984
+        },
+        {
+            "source": "TSCO",
+            "target": "TTEK",
+            "value": 0.9566757175608004
+        },
+        {
+            "source": "NUVL",
+            "target": "TTEK",
+            "value": 0.9593754971074602
+        },
+        {
+            "source": "MKSI",
+            "target": "TTEK",
+            "value": 0.9712784617113408
+        },
+        {
+            "source": "CSWI",
+            "target": "TTEK",
+            "value": 0.974143618574713
+        },
+        {
+            "source": "TER",
+            "target": "TTEK",
+            "value": 0.9700204866446324
+        },
+        {
+            "source": "ENVX",
+            "target": "TTEK",
+            "value": 0.9729300021596284
+        },
+        {
+            "source": "GLPI",
+            "target": "TTEK",
+            "value": 0.953223714700018
+        },
+        {
+            "source": "MDB",
+            "target": "TTEK",
+            "value": 0.958050421744907
+        },
+        {
+            "source": "NTAP",
+            "target": "TTEK",
+            "value": 0.9577836424668564
+        },
+        {
+            "source": "GFS",
+            "target": "TTEK",
+            "value": 0.9645073167430612
+        },
+        {
+            "source": "VRSN",
+            "target": "TTEK",
+            "value": 0.9550264602439048
+        },
+        {
+            "source": "SNPS",
+            "target": "TTEK",
+            "value": 0.9620402229598202
+        },
+        {
+            "source": "FTNT",
+            "target": "TTEK",
+            "value": 0.96728279180204
+        },
+        {
+            "source": "CDNS",
+            "target": "TTEK",
+            "value": 0.965439011852711
+        },
+        {
+            "source": "PANW",
+            "target": "TTEK",
+            "value": 0.9670191907690662
+        },
+        {
+            "source": "LRCX",
+            "target": "TTEK",
+            "value": 0.956816039315741
+        },
+        {
+            "source": "TXN",
+            "target": "TTEK",
+            "value": 0.9796491116802178
+        },
+        {
+            "source": "ROKU",
+            "target": "TTEK",
+            "value": 0.9649151143377616
+        },
+        {
+            "source": "ZD",
+            "target": "TTEK",
+            "value": 0.9707642838802132
+        },
+        {
+            "source": "TRMB",
+            "target": "HAS",
+            "value": 0.9628697426084694
+        },
+        {
+            "source": "Z",
+            "target": "ZG",
+            "value": 0.9989243543252424
+        },
+        {
+            "source": "TSCO",
+            "target": "DKNG",
+            "value": 0.966729524086278
+        },
+        {
+            "source": "STEP",
+            "target": "DKNG",
+            "value": 0.9568016181673092
+        },
+        {
+            "source": "NDAQ",
+            "target": "DKNG",
+            "value": 0.9538176310544566
+        },
+        {
+            "source": "HSIC",
+            "target": "DKNG",
+            "value": 0.9536256438601152
+        },
+        {
+            "source": "RGEN",
+            "target": "DKNG",
+            "value": 0.9675013501653422
+        },
+        {
+            "source": "NUVL",
+            "target": "DKNG",
+            "value": 0.9586759501093586
+        },
+        {
+            "source": "MKSI",
+            "target": "DKNG",
+            "value": 0.9804981288250928
+        },
+        {
+            "source": "DDOG",
+            "target": "DKNG",
+            "value": 0.9567460796172984
+        },
+        {
+            "source": "MDB",
+            "target": "DKNG",
+            "value": 0.9651874654710394
+        },
+        {
+            "source": "FTNT",
+            "target": "DKNG",
+            "value": 0.9648791625908651
+        },
+        {
+            "source": "AVGO",
+            "target": "DKNG",
+            "value": 0.9635320014455842
+        },
+        {
+            "source": "ADI",
+            "target": "DKNG",
+            "value": 0.97667648872094
+        },
+        {
+            "source": "ZD",
+            "target": "DKNG",
+            "value": 0.960148581167858
+        },
+        {
+            "source": "GLPI",
+            "target": "COST",
+            "value": 0.9515580262270088
+        },
+        {
+            "source": "TSCO",
+            "target": "CTAS",
+            "value": 0.9530837907966202
+        },
+        {
+            "source": "JJSF",
+            "target": "CTAS",
+            "value": 0.9630197156070824
+        },
+        {
+            "source": "WWD",
+            "target": "CTAS",
+            "value": 0.9536359930860724
+        },
+        {
+            "source": "MORN",
+            "target": "CTAS",
+            "value": 0.9592444717758424
+        },
+        {
+            "source": "AMGN",
+            "target": "CTAS",
+            "value": 0.95766391140796
+        },
+        {
+            "source": "HON",
+            "target": "CTAS",
+            "value": 0.9539605881104632
+        },
+        {
+            "source": "TER",
+            "target": "CTAS",
+            "value": 0.9690789356009228
+        },
+        {
+            "source": "LINC",
+            "target": "CTAS",
+            "value": 0.9725754075734347
+        },
+        {
+            "source": "SNPS",
+            "target": "CTAS",
+            "value": 0.9710922806037088
+        },
+        {
+            "source": "CDNS",
+            "target": "CTAS",
+            "value": 0.9535234105426572
+        },
+        {
+            "source": "CDW",
+            "target": "CPRT",
+            "value": 0.9619961829590384
+        },
+        {
+            "source": "TPG",
+            "target": "CPRT",
+            "value": 0.9818082216842988
+        },
+        {
+            "source": "RGEN",
+            "target": "CPRT",
+            "value": 0.9540228493516816
+        },
+        {
+            "source": "NUVL",
+            "target": "CPRT",
+            "value": 0.9832208981847438
+        },
+        {
+            "source": "REGN",
+            "target": "CPRT",
+            "value": 0.9758681594169766
+        },
+        {
+            "source": "CGNX",
+            "target": "CPRT",
+            "value": 0.9504499927206128
+        },
+        {
+            "source": "MKSI",
+            "target": "CPRT",
+            "value": 0.9683662783056154
+        },
+        {
+            "source": "WSC",
+            "target": "CPRT",
+            "value": 0.975445368068824
+        },
+        {
+            "source": "CSWI",
+            "target": "CPRT",
+            "value": 0.9656857804872842
+        },
+        {
+            "source": "IESC",
+            "target": "CPRT",
+            "value": 0.9648939212971448
+        },
+        {
+            "source": "ROAD",
+            "target": "CPRT",
+            "value": 0.9655389438654268
+        },
+        {
+            "source": "TER",
+            "target": "CPRT",
+            "value": 0.9536832002429638
+        },
+        {
+            "source": "ENTG",
+            "target": "CPRT",
+            "value": 0.9719343720512308
+        },
+        {
+            "source": "HST",
+            "target": "CPRT",
+            "value": 0.9558612138521934
+        },
+        {
+            "source": "MDB",
+            "target": "CPRT",
+            "value": 0.9717702697123236
+        },
+        {
+            "source": "SNPS",
+            "target": "CPRT",
+            "value": 0.952458086546025
+        },
+        {
+            "source": "MSFT",
+            "target": "CPRT",
+            "value": 0.9662686126661444
+        },
+        {
+            "source": "AVGO",
+            "target": "CPRT",
+            "value": 0.9663670102639444
+        },
+        {
+            "source": "QCOM",
+            "target": "CPRT",
+            "value": 0.9680101748447788
+        },
+        {
+            "source": "INTU",
+            "target": "CPRT",
+            "value": 0.972999086651552
+        },
+        {
+            "source": "AMAT",
+            "target": "CPRT",
+            "value": 0.9506586457247062
+        },
+        {
+            "source": "LRCX",
+            "target": "CPRT",
+            "value": 0.9669482834693228
+        },
+        {
+            "source": "ADI",
+            "target": "CPRT",
+            "value": 0.953194864021158
+        },
+        {
+            "source": "LFUS",
+            "target": "PAYX",
+            "value": 0.9568710779719868
+        },
+        {
+            "source": "WWD",
+            "target": "PAYX",
+            "value": 0.9703016827100976
+        },
+        {
+            "source": "PAGP",
+            "target": "PAYX",
+            "value": 0.957562281559011
+        },
+        {
+            "source": "EWBC",
+            "target": "PAYX",
+            "value": 0.9641485666861456
+        },
+        {
+            "source": "SLM",
+            "target": "PAYX",
+            "value": 0.9663989316253364
+        },
+        {
+            "source": "LPLA",
+            "target": "PAYX",
+            "value": 0.9547492547847553
+        },
+        {
+            "source": "AFRM",
+            "target": "PAYX",
+            "value": 0.9733219479786228
+        },
+        {
+            "source": "TECH",
+            "target": "PAYX",
+            "value": 0.969284978233696
+        },
+        {
+            "source": "MKSI",
+            "target": "PAYX",
+            "value": 0.9570481282008436
+        },
+        {
+            "source": "IESC",
+            "target": "PAYX",
+            "value": 0.952740263519372
+        },
+        {
+            "source": "CSX",
+            "target": "PAYX",
+            "value": 0.9824190706396992
+        },
+        {
+            "source": "STLD",
+            "target": "PAYX",
+            "value": 0.9646896068139126
+        },
+        {
+            "source": "GLPI",
+            "target": "PAYX",
+            "value": 0.9614569462314064
+        },
+        {
+            "source": "HST",
+            "target": "PAYX",
+            "value": 0.9792169044644488
+        },
+        {
+            "source": "SBRA",
+            "target": "PAYX",
+            "value": 0.952600861679592
+        },
+        {
+            "source": "EA",
+            "target": "PAYX",
+            "value": 0.9688925859690342
+        },
+        {
+            "source": "MDB",
+            "target": "PAYX",
+            "value": 0.9506638461555964
+        },
+        {
+            "source": "SNPS",
+            "target": "PAYX",
+            "value": 0.958591212218288
+        },
+        {
+            "source": "MSFT",
+            "target": "PAYX",
+            "value": 0.97691359101142
+        },
+        {
+            "source": "AVGO",
+            "target": "PAYX",
+            "value": 0.9779051614588524
+        },
+        {
+            "source": "INTU",
+            "target": "PAYX",
+            "value": 0.9863105023310612
+        },
+        {
+            "source": "LRCX",
+            "target": "PAYX",
+            "value": 0.9639121091066468
+        },
+        {
+            "source": "TXN",
+            "target": "PAYX",
+            "value": 0.9606639867447974
+        },
+        {
+            "source": "FFIV",
+            "target": "PAYX",
+            "value": 0.986288273230248
+        },
+        {
+            "source": "CDW",
+            "target": "PCAR",
+            "value": 0.9516327557058024
+        },
+        {
+            "source": "AFRM",
+            "target": "PCAR",
+            "value": 0.9641741872772236
+        },
+        {
+            "source": "TECH",
+            "target": "PCAR",
+            "value": 0.9500671021933392
+        },
+        {
+            "source": "ITCI",
+            "target": "PCAR",
+            "value": 0.9617824726701572
+        },
+        {
+            "source": "TRMB",
+            "target": "PCAR",
+            "value": 0.9530834067742668
+        },
+        {
+            "source": "FTNT",
+            "target": "PCAR",
+            "value": 0.9698695845025284
+        },
+        {
+            "source": "TXN",
+            "target": "PCAR",
+            "value": 0.9566117741362424
+        },
+        {
+            "source": "NDAQ",
+            "target": "CDW",
+            "value": 0.9695305710975936
+        },
+        {
+            "source": "CGNX",
+            "target": "CDW",
+            "value": 0.9514042464747112
+        },
+        {
+            "source": "CSWI",
+            "target": "CDW",
+            "value": 0.9637008130123856
+        },
+        {
+            "source": "MIDD",
+            "target": "CDW",
+            "value": 0.978250257363358
+        },
+        {
+            "source": "ODFL",
+            "target": "CDW",
+            "value": 0.969732930130711
+        },
+        {
+            "source": "TER",
+            "target": "CDW",
+            "value": 0.9565511802159814
+        },
+        {
+            "source": "NDSN",
+            "target": "CDW",
+            "value": 0.9679914758814512
+        },
+        {
+            "source": "GFS",
+            "target": "CDW",
+            "value": 0.9728317656125964
+        },
+        {
+            "source": "FTNT",
+            "target": "CDW",
+            "value": 0.9750575201790708
+        },
+        {
+            "source": "CDNS",
+            "target": "CDW",
+            "value": 0.979304994659533
+        },
+        {
+            "source": "MSFT",
+            "target": "CDW",
+            "value": 0.9522553638829552
+        },
+        {
+            "source": "ADI",
+            "target": "CDW",
+            "value": 0.9535343076915
+        },
+        {
+            "source": "TXN",
+            "target": "CDW",
+            "value": 0.953995694292841
+        },
+        {
+            "source": "ZD",
+            "target": "CDW",
+            "value": 0.9715808616738212
+        },
+        {
+            "source": "TECH",
+            "target": "TSCO",
+            "value": 0.951041904675187
+        },
+        {
+            "source": "ENTG",
+            "target": "TSCO",
+            "value": 0.9699141600951656
+        },
+        {
+            "source": "HST",
+            "target": "TSCO",
+            "value": 0.961145113222998
+        },
+        {
+            "source": "VRSK",
+            "target": "TSCO",
+            "value": 0.9614929942875996
+        },
+        {
+            "source": "GFS",
+            "target": "TSCO",
+            "value": 0.9586729907950824
+        },
+        {
+            "source": "CDNS",
+            "target": "TSCO",
+            "value": 0.9600525408449028
+        },
+        {
+            "source": "AVGO",
+            "target": "TSCO",
+            "value": 0.968447728911066
+        },
+        {
+            "source": "INTU",
+            "target": "TSCO",
+            "value": 0.957127894607668
+        },
+        {
+            "source": "LRCX",
+            "target": "TSCO",
+            "value": 0.976897671241345
+        },
+        {
+            "source": "ADI",
+            "target": "TSCO",
+            "value": 0.9530642250384364
+        },
+        {
+            "source": "MRVL",
+            "target": "TSCO",
+            "value": 0.9571025767872932
+        },
+        {
+            "source": "ZD",
+            "target": "TSCO",
+            "value": 0.9571002934369692
+        },
+        {
+            "source": "ZION",
+            "target": "ROST",
+            "value": 0.9570752185412224
+        },
+        {
+            "source": "STEP",
+            "target": "ROST",
+            "value": 0.9520097479049408
+        },
+        {
+            "source": "NDAQ",
+            "target": "ROST",
+            "value": 0.9801468362804904
+        },
+        {
+            "source": "MASI",
+            "target": "ROST",
+            "value": 0.9727860305107122
+        },
+        {
+            "source": "REGN",
+            "target": "ROST",
+            "value": 0.9652401591063394
+        },
+        {
+            "source": "TER",
+            "target": "ROST",
+            "value": 0.9541542760398676
+        },
+        {
+            "source": "FTAI",
+            "target": "ROST",
+            "value": 0.9609355292802856
+        },
+        {
+            "source": "ENTG",
+            "target": "ROST",
+            "value": 0.9636125298473384
+        },
+        {
+            "source": "HST",
+            "target": "ROST",
+            "value": 0.9536109070380808
+        },
+        {
+            "source": "SBRA",
+            "target": "ROST",
+            "value": 0.9626745940044352
+        },
+        {
+            "source": "DDOG",
+            "target": "ROST",
+            "value": 0.9597634836467308
+        },
+        {
+            "source": "SNPS",
+            "target": "ROST",
+            "value": 0.956052444237644
+        },
+        {
+            "source": "CDNS",
+            "target": "ROST",
+            "value": 0.9528951743943848
+        },
+        {
+            "source": "AVGO",
+            "target": "ROST",
+            "value": 0.9660017846197352
+        },
+        {
+            "source": "INTU",
+            "target": "ROST",
+            "value": 0.9753063298719268
+        },
+        {
+            "source": "LRCX",
+            "target": "ROST",
+            "value": 0.977761747337668
+        },
+        {
+            "source": "KLAC",
+            "target": "ROST",
+            "value": 0.9668485637657293
+        },
+        {
+            "source": "FITBP",
+            "target": "KOSS",
+            "value": 0.9508920102936098
+        },
+        {
+            "source": "CGNX",
+            "target": "SFM",
+            "value": 0.9533976554094192
+        },
+        {
+            "source": "LOPE",
+            "target": "SFM",
+            "value": 0.9517563494720468
+        },
+        {
+            "source": "PNFP",
+            "target": "COKE",
+            "value": 0.9542260098637118
+        },
+        {
+            "source": "SBRA",
+            "target": "COKE",
+            "value": 0.9510646919546404
+        },
+        {
+            "source": "ROAD",
+            "target": "FRPT",
+            "value": 0.9626832232163848
+        },
+        {
+            "source": "ROIC",
+            "target": "FRPT",
+            "value": 0.9689252103686914
+        },
+        {
+            "source": "CSX",
+            "target": "FCEL",
+            "value": 0.9529244724318076
+        },
+        {
+            "source": "ZD",
+            "target": "TUSK",
+            "value": 0.9621707369978426
+        },
+        {
+            "source": "ENTG",
+            "target": "KLXE",
+            "value": 0.953724301256232
+        },
+        {
+            "source": "LRCX",
+            "target": "KLXE",
+            "value": 0.9637522896555566
+        },
+        {
+            "source": "LFUS",
+            "target": "PAA",
+            "value": 0.9528563938534568
+        },
+        {
+            "source": "PAGP",
+            "target": "PAA",
+            "value": 0.9802880848017828
+        },
+        {
+            "source": "TPG",
+            "target": "PAA",
+            "value": 0.9646904914738232
+        },
+        {
+            "source": "RGEN",
+            "target": "PAA",
+            "value": 0.9687245670247616
+        },
+        {
+            "source": "AMAT",
+            "target": "PAA",
+            "value": 0.9616012630485068
+        },
+        {
+            "source": "DMLP",
+            "target": "CHRD",
+            "value": 0.9649176419821855
+        },
+        {
+            "source": "WWD",
+            "target": "LFUS",
+            "value": 0.9560807946099098
+        },
+        {
+            "source": "PAGP",
+            "target": "LFUS",
+            "value": 0.950213050914295
+        },
+        {
+            "source": "STEP",
+            "target": "LFUS",
+            "value": 0.9614016829839278
+        },
+        {
+            "source": "TPG",
+            "target": "LFUS",
+            "value": 0.9833032011683276
+        },
+        {
+            "source": "MKSI",
+            "target": "LFUS",
+            "value": 0.9759513634036272
+        },
+        {
+            "source": "CSWI",
+            "target": "LFUS",
+            "value": 0.9665728356941377
+        },
+        {
+            "source": "IESC",
+            "target": "LFUS",
+            "value": 0.9581389617353406
+        },
+        {
+            "source": "ROAD",
+            "target": "LFUS",
+            "value": 0.9686016851647808
+        },
+        {
+            "source": "MIDD",
+            "target": "LFUS",
+            "value": 0.9647318810838892
+        },
+        {
+            "source": "ODFL",
+            "target": "LFUS",
+            "value": 0.9573985313538904
+        },
+        {
+            "source": "TER",
+            "target": "LFUS",
+            "value": 0.9763072760559532
+        },
+        {
+            "source": "ENTG",
+            "target": "LFUS",
+            "value": 0.9788724441122147
+        },
+        {
+            "source": "TRMB",
+            "target": "LFUS",
+            "value": 0.9551323771982376
+        },
+        {
+            "source": "HST",
+            "target": "LFUS",
+            "value": 0.9547923885830504
+        },
+        {
+            "source": "LOPE",
+            "target": "LFUS",
+            "value": 0.9503308112356296
+        },
+        {
+            "source": "MCHP",
+            "target": "LFUS",
+            "value": 0.9676480152790172
+        },
+        {
+            "source": "GFS",
+            "target": "LFUS",
+            "value": 0.9660052103669556
+        },
+        {
+            "source": "SNPS",
+            "target": "LFUS",
+            "value": 0.9693602056599676
+        },
+        {
+            "source": "INTC",
+            "target": "LFUS",
+            "value": 0.9507492368631624
+        },
+        {
+            "source": "AVGO",
+            "target": "LFUS",
+            "value": 0.9663649624736684
+        },
+        {
+            "source": "QCOM",
+            "target": "LFUS",
+            "value": 0.9811598417601678
+        },
+        {
+            "source": "AMAT",
+            "target": "LFUS",
+            "value": 0.9812940989906668
+        },
+        {
+            "source": "LRCX",
+            "target": "LFUS",
+            "value": 0.9786063521635266
+        },
+        {
+            "source": "ADI",
+            "target": "LFUS",
+            "value": 0.9801332516342948
+        },
+        {
+            "source": "KLAC",
+            "target": "LFUS",
+            "value": 0.9780630377097848
+        },
+        {
+            "source": "TXN",
+            "target": "LFUS",
+            "value": 0.9504927398763344
+        },
+        {
+            "source": "FFIV",
+            "target": "LFUS",
+            "value": 0.9620712927395804
+        },
+        {
+            "source": "CLNE",
+            "target": "LFUS",
+            "value": 0.9563655598565812
+        },
+        {
+            "source": "NUVL",
+            "target": "WWD",
+            "value": 0.9593907424736
+        },
+        {
+            "source": "HON",
+            "target": "WWD",
+            "value": 0.977344531193676
+        },
+        {
+            "source": "TER",
+            "target": "WWD",
+            "value": 0.9704018989759796
+        },
+        {
+            "source": "TRMB",
+            "target": "WWD",
+            "value": 0.9602855768436652
+        },
+        {
+            "source": "HST",
+            "target": "WWD",
+            "value": 0.9622822691586548
+        },
+        {
+            "source": "MDB",
+            "target": "WWD",
+            "value": 0.9702308596582868
+        },
+        {
+            "source": "GFS",
+            "target": "WWD",
+            "value": 0.9589789708591872
+        },
+        {
+            "source": "SNPS",
+            "target": "WWD",
+            "value": 0.9827931581802728
+        },
+        {
+            "source": "FTNT",
+            "target": "WWD",
+            "value": 0.9628059193398136
+        },
+        {
+            "source": "AMAT",
+            "target": "WWD",
+            "value": 0.9636124212208608
+        },
+        {
+            "source": "LRCX",
+            "target": "WWD",
+            "value": 0.951117895203312
+        },
+        {
+            "source": "ZD",
+            "target": "WWD",
+            "value": 0.9521339787863634
+        },
+        {
+            "source": "TPG",
+            "target": "PAGP",
+            "value": 0.951964857952896
+        },
+        {
+            "source": "RGEN",
+            "target": "PAGP",
+            "value": 0.968225898877406
+        },
+        {
+            "source": "ENTG",
+            "target": "PAGP",
+            "value": 0.9576042895184534
+        },
+        {
+            "source": "AMAT",
+            "target": "PAGP",
+            "value": 0.9739107749639432
+        },
+        {
+            "source": "LRCX",
+            "target": "PAGP",
+            "value": 0.953732739526742
+        },
+        {
+            "source": "TECH",
+            "target": "CLMT",
+            "value": 0.9667736315036368
+        },
+        {
+            "source": "ENTG",
+            "target": "CLMT",
+            "value": 0.972240907826881
+        },
+        {
+            "source": "SNPS",
+            "target": "CLMT",
+            "value": 0.9575056535601676
+        },
+        {
+            "source": "EVRG",
+            "target": "MGEE",
+            "value": 0.9728865870929576
+        },
+        {
+            "source": "AFRM",
+            "target": "ZION",
+            "value": 0.9726205310314144
+        },
+        {
+            "source": "HBAN",
+            "target": "ZION",
+            "value": 0.9696858854102124
+        },
+        {
+            "source": "RGEN",
+            "target": "ZION",
+            "value": 0.9735881139729566
+        },
+        {
+            "source": "ILMN",
+            "target": "ZION",
+            "value": 0.9683165434292222
+        },
+        {
+            "source": "CGNX",
+            "target": "ZION",
+            "value": 0.9643933816880256
+        },
+        {
+            "source": "MIDD",
+            "target": "ZION",
+            "value": 0.9616426313755364
+        },
+        {
+            "source": "ENTG",
+            "target": "ZION",
+            "value": 0.958281205904452
+        },
+        {
+            "source": "NYMT",
+            "target": "ZION",
+            "value": 0.95276591326328
+        },
+        {
+            "source": "EWBC",
+            "target": "MORN",
+            "value": 0.9626698164781874
+        },
+        {
+            "source": "PCYO",
+            "target": "MORN",
+            "value": 0.9630553845894522
+        },
+        {
+            "source": "STEP",
+            "target": "EWBC",
+            "value": 0.9578417038538352
+        },
+        {
+            "source": "FITB",
+            "target": "EWBC",
+            "value": 0.9730921707756108
+        },
+        {
+            "source": "HBAN",
+            "target": "EWBC",
+            "value": 0.9639566622283564
+        },
+        {
+            "source": "RGEN",
+            "target": "EWBC",
+            "value": 0.9605340665648716
+        },
+        {
+            "source": "NUVL",
+            "target": "EWBC",
+            "value": 0.9586604308887456
+        },
+        {
+            "source": "HST",
+            "target": "EWBC",
+            "value": 0.9510973040364972
+        },
+        {
+            "source": "MDB",
+            "target": "EWBC",
+            "value": 0.9529341455949736
+        },
+        {
+            "source": "FITB",
+            "target": "PNFP",
+            "value": 0.9658433072373396
+        },
+        {
+            "source": "HBAN",
+            "target": "PNFP",
+            "value": 0.9630063119825786
+        },
+        {
+            "source": "RGEN",
+            "target": "PNFP",
+            "value": 0.9675017317441592
+        },
+        {
+            "source": "WSC",
+            "target": "PNFP",
+            "value": 0.9608705563746812
+        },
+        {
+            "source": "TRMB",
+            "target": "PNFP",
+            "value": 0.9627923291179484
+        },
+        {
+            "source": "KLAC",
+            "target": "PNFP",
+            "value": 0.9582862269792112
+        },
+        {
+            "source": "HBAN",
+            "target": "WTFC",
+            "value": 0.9531114688010766
+        },
+        {
+            "source": "RGEN",
+            "target": "WTFC",
+            "value": 0.9541182890498812
+        },
+        {
+            "source": "STEP",
+            "target": "HLNE",
+            "value": 0.965236922069312
+        },
+        {
+            "source": "HOOD",
+            "target": "ONB",
+            "value": 0.9622551436726376
+        },
+        {
+            "source": "STRA",
+            "target": "ONB",
+            "value": 0.96625539129525
+        },
+        {
+            "source": "PCYO",
+            "target": "ONB",
+            "value": 0.9600821100818973
+        },
+        {
+            "source": "HOOD",
+            "target": "BPOP",
+            "value": 0.9592646588323962
+        },
+        {
+            "source": "AAON",
+            "target": "BPOP",
+            "value": 0.9543557462261648
+        },
+        {
+            "source": "NYMT",
+            "target": "BPOP",
+            "value": 0.9515992611250907
+        },
+        {
+            "source": "STRA",
+            "target": "BPOP",
+            "value": 0.9574531377093024
+        },
+        {
+            "source": "MDB",
+            "target": "BPOP",
+            "value": 0.9544541056700664
+        },
+        {
+            "source": "HOOD",
+            "target": "BOKF",
+            "value": 0.9561851953596588
+        },
+        {
+            "source": "FITB",
+            "target": "BOKF",
+            "value": 0.9523918739095252
+        },
+        {
+            "source": "HBAN",
+            "target": "BOKF",
+            "value": 0.9831835889626424
+        },
+        {
+            "source": "ILMN",
+            "target": "BOKF",
+            "value": 0.97432922894927
+        },
+        {
+            "source": "CGNX",
+            "target": "BOKF",
+            "value": 0.969363134927996
+        },
+        {
+            "source": "MIDD",
+            "target": "BOKF",
+            "value": 0.9587882117355796
+        },
+        {
+            "source": "TRMB",
+            "target": "BOKF",
+            "value": 0.9663570938484496
+        },
+        {
+            "source": "STRA",
+            "target": "BOKF",
+            "value": 0.9593205885096588
+        },
+        {
+            "source": "NDAQ",
+            "target": "STEP",
+            "value": 0.9566503688083562
+        },
+        {
+            "source": "FITB",
+            "target": "STEP",
+            "value": 0.9580774311773432
+        },
+        {
+            "source": "AFRM",
+            "target": "STEP",
+            "value": 0.9636218827020396
+        },
+        {
+            "source": "RGEN",
+            "target": "STEP",
+            "value": 0.9595182205046816
+        },
+        {
+            "source": "IESC",
+            "target": "STEP",
+            "value": 0.9669075948327944
+        },
+        {
+            "source": "ROAD",
+            "target": "STEP",
+            "value": 0.9705424330193236
+        },
+        {
+            "source": "TER",
+            "target": "STEP",
+            "value": 0.9727545388610376
+        },
+        {
+            "source": "ENTG",
+            "target": "STEP",
+            "value": 0.9659852129859662
+        },
+        {
+            "source": "ENVX",
+            "target": "STEP",
+            "value": 0.9733741720925466
+        },
+        {
+            "source": "CTLP",
+            "target": "STEP",
+            "value": 0.9697997343392152
+        },
+        {
+            "source": "HST",
+            "target": "STEP",
+            "value": 0.9516704477150724
+        },
+        {
+            "source": "MDB",
+            "target": "STEP",
+            "value": 0.9511986699963876
+        },
+        {
+            "source": "SNPS",
+            "target": "STEP",
+            "value": 0.9509318292993924
+        },
+        {
+            "source": "CDNS",
+            "target": "STEP",
+            "value": 0.9578800193848626
+        },
+        {
+            "source": "INTU",
+            "target": "STEP",
+            "value": 0.9695391344328516
+        },
+        {
+            "source": "LRCX",
+            "target": "STEP",
+            "value": 0.9702224447568366
+        },
+        {
+            "source": "KLAC",
+            "target": "STEP",
+            "value": 0.9652218508182242
+        },
+        {
+            "source": "ZD",
+            "target": "STEP",
+            "value": 0.9557471588788612
+        },
+        {
+            "source": "NTGR",
+            "target": "STEP",
+            "value": 0.9625727658501386
+        },
+        {
+            "source": "MATW",
+            "target": "SLM",
+            "value": 0.9633537059164776
+        },
+        {
+            "source": "AFRM",
+            "target": "ARCC",
+            "value": 0.9778247036043464
+        },
+        {
+            "source": "HBAN",
+            "target": "ARCC",
+            "value": 0.9633412334091306
+        },
+        {
+            "source": "PCVX",
+            "target": "ARCC",
+            "value": 0.9553961559411224
+        },
+        {
+            "source": "INSM",
+            "target": "ARCC",
+            "value": 0.9637851518333368
+        },
+        {
+            "source": "LSTR",
+            "target": "ARCC",
+            "value": 0.968817214382506
+        },
+        {
+            "source": "HON",
+            "target": "ARCC",
+            "value": 0.9635280468081476
+        },
+        {
+            "source": "NYMT",
+            "target": "ARCC",
+            "value": 0.95777578864143
+        },
+        {
+            "source": "EA",
+            "target": "ARCC",
+            "value": 0.963742591585032
+        },
+        {
+            "source": "PCYO",
+            "target": "ARCC",
+            "value": 0.9554209251094916
+        },
+        {
+            "source": "PCH",
+            "target": "SLMBP",
+            "value": 0.9567311188534346
+        },
+        {
+            "source": "AFRM",
+            "target": "NDAQ",
+            "value": 0.9615831290372118
+        },
+        {
+            "source": "HBAN",
+            "target": "NDAQ",
+            "value": 0.9521404667194228
+        },
+        {
+            "source": "TPG",
+            "target": "NDAQ",
+            "value": 0.9874091386464712
+        },
+        {
+            "source": "TECH",
+            "target": "NDAQ",
+            "value": 0.9621963859848396
+        },
+        {
+            "source": "RGEN",
+            "target": "NDAQ",
+            "value": 0.9657624147236844
+        },
+        {
+            "source": "HALO",
+            "target": "NDAQ",
+            "value": 0.9766259736999608
+        },
+        {
+            "source": "CGNX",
+            "target": "NDAQ",
+            "value": 0.9513225665126936
+        },
+        {
+            "source": "ROAD",
+            "target": "NDAQ",
+            "value": 0.9532520917236706
+        },
+        {
+            "source": "ENTG",
+            "target": "NDAQ",
+            "value": 0.9625796842835715
+        },
+        {
+            "source": "TRMB",
+            "target": "NDAQ",
+            "value": 0.9633868462577406
+        },
+        {
+            "source": "CTLP",
+            "target": "NDAQ",
+            "value": 0.9533280709694334
+        },
+        {
+            "source": "LAUR",
+            "target": "NDAQ",
+            "value": 0.9629934175236676
+        },
+        {
+            "source": "DDOG",
+            "target": "NDAQ",
+            "value": 0.979031465917692
+        },
+        {
+            "source": "SNPS",
+            "target": "NDAQ",
+            "value": 0.9622723670489388
+        },
+        {
+            "source": "QCOM",
+            "target": "NDAQ",
+            "value": 0.9597946159303724
+        },
+        {
+            "source": "INTU",
+            "target": "NDAQ",
+            "value": 0.9760701473902617
+        },
+        {
+            "source": "LRCX",
+            "target": "NDAQ",
+            "value": 0.9587592919137472
+        },
+        {
+            "source": "FFIV",
+            "target": "NDAQ",
+            "value": 0.980372139953358
+        },
+        {
+            "source": "NTGR",
+            "target": "NDAQ",
+            "value": 0.9521143974983534
+        },
+        {
+            "source": "QCOM",
+            "target": "HBANM",
+            "value": 0.9519547373699326
+        },
+        {
+            "source": "HBAN",
+            "target": "FITB",
+            "value": 0.9628127075116608
+        },
+        {
+            "source": "TPG",
+            "target": "FITB",
+            "value": 0.9633410232631544
+        },
+        {
+            "source": "RVMD",
+            "target": "FITB",
+            "value": 0.968211117676626
+        },
+        {
+            "source": "ALGN",
+            "target": "FITB",
+            "value": 0.9562786143913528
+        },
+        {
+            "source": "HEES",
+            "target": "FITB",
+            "value": 0.9825165969660968
+        },
+        {
+            "source": "AAON",
+            "target": "FITB",
+            "value": 0.9636361175668944
+        },
+        {
+            "source": "HON",
+            "target": "FITB",
+            "value": 0.952839257967812
+        },
+        {
+            "source": "STLD",
+            "target": "FITB",
+            "value": 0.9569267414234326
+        },
+        {
+            "source": "NYMT",
+            "target": "FITB",
+            "value": 0.950706958802062
+        },
+        {
+            "source": "NTGR",
+            "target": "FITB",
+            "value": 0.9654755145113272
+        },
+        {
+            "source": "MDB",
+            "target": "LPLA",
+            "value": 0.95175963971053
+        },
+        {
+            "source": "AMAT",
+            "target": "LPLA",
+            "value": 0.9543797671540876
+        },
+        {
+            "source": "LRCX",
+            "target": "LPLA",
+            "value": 0.9579510709338952
+        },
+        {
+            "source": "NUVL",
+            "target": "AFRM",
+            "value": 0.9737710885985764
+        },
+        {
+            "source": "REGN",
+            "target": "AFRM",
+            "value": 0.9635296330514896
+        },
+        {
+            "source": "CGNX",
+            "target": "AFRM",
+            "value": 0.9668058008403758
+        },
+        {
+            "source": "WSC",
+            "target": "AFRM",
+            "value": 0.9740432756898482
+        },
+        {
+            "source": "MIDD",
+            "target": "AFRM",
+            "value": 0.9660366043937172
+        },
+        {
+            "source": "TER",
+            "target": "AFRM",
+            "value": 0.956406793910846
+        },
+        {
+            "source": "ENTG",
+            "target": "AFRM",
+            "value": 0.9666664531833902
+        },
+        {
+            "source": "CTLP",
+            "target": "AFRM",
+            "value": 0.9564486950477517
+        },
+        {
+            "source": "HST",
+            "target": "AFRM",
+            "value": 0.9774654467886008
+        },
+        {
+            "source": "MDB",
+            "target": "AFRM",
+            "value": 0.9737256732270791
+        },
+        {
+            "source": "MCHP",
+            "target": "AFRM",
+            "value": 0.9713486686081148
+        },
+        {
+            "source": "GFS",
+            "target": "AFRM",
+            "value": 0.9578259679619832
+        },
+        {
+            "source": "SNPS",
+            "target": "AFRM",
+            "value": 0.9708404248497596
+        },
+        {
+            "source": "AVGO",
+            "target": "AFRM",
+            "value": 0.95197585400419
+        },
+        {
+            "source": "AMAT",
+            "target": "AFRM",
+            "value": 0.951026112707269
+        },
+        {
+            "source": "ZD",
+            "target": "AFRM",
+            "value": 0.9676010022898328
+        },
+        {
+            "source": "CLNE",
+            "target": "AFRM",
+            "value": 0.9745637024449992
+        },
+        {
+            "source": "TRMB",
+            "target": "FCNCA",
+            "value": 0.9666402884777444
+        },
+        {
+            "source": "TPG",
+            "target": "HBAN",
+            "value": 0.952315927172753
+        },
+        {
+            "source": "AAON",
+            "target": "HBAN",
+            "value": 0.954372475361288
+        },
+        {
+            "source": "CTLP",
+            "target": "HBAN",
+            "value": 0.9628111636212364
+        },
+        {
+            "source": "HST",
+            "target": "HBAN",
+            "value": 0.9578373050925586
+        },
+        {
+            "source": "AVGO",
+            "target": "HBAN",
+            "value": 0.9513153886432316
+        },
+        {
+            "source": "AMAT",
+            "target": "HBAN",
+            "value": 0.95293541589121
+        },
+        {
+            "source": "MATW",
+            "target": "HBAN",
+            "value": 0.9521577473477224
+        },
+        {
+            "source": "MIDD",
+            "target": "FITBI",
+            "value": 0.96318246225507
+        },
+        {
+            "source": "GFS",
+            "target": "FITBI",
+            "value": 0.9507384349579614
+        },
+        {
+            "source": "RGEN",
+            "target": "TPG",
+            "value": 0.9749863910420808
+        },
+        {
+            "source": "ILMN",
+            "target": "TPG",
+            "value": 0.9768465863865538
+        },
+        {
+            "source": "CGNX",
+            "target": "TPG",
+            "value": 0.9583753806509244
+        },
+        {
+            "source": "MKSI",
+            "target": "TPG",
+            "value": 0.968078945160432
+        },
+        {
+            "source": "LAUR",
+            "target": "TPG",
+            "value": 0.9721653593255912
+        },
+        {
+            "source": "EA",
+            "target": "TPG",
+            "value": 0.9727233208010052
+        },
+        {
+            "source": "MSFT",
+            "target": "TPG",
+            "value": 0.9510460333276356
+        },
+        {
+            "source": "AVGO",
+            "target": "TPG",
+            "value": 0.9518399394914312
+        },
+        {
+            "source": "INTU",
+            "target": "TPG",
+            "value": 0.968015119786512
+        },
+        {
+            "source": "BWEN",
+            "target": "TPG",
+            "value": 0.9550742679391
+        },
+        {
+            "source": "ZD",
+            "target": "TPG",
+            "value": 0.9575172879825112
+        },
+        {
+            "source": "WSC",
+            "target": "TECH",
+            "value": 0.967683794038181
+        },
+        {
+            "source": "HST",
+            "target": "TECH",
+            "value": 0.9650822240868244
+        },
+        {
+            "source": "DDOG",
+            "target": "TECH",
+            "value": 0.967685357314222
+        },
+        {
+            "source": "MDB",
+            "target": "TECH",
+            "value": 0.9526021100126412
+        },
+        {
+            "source": "INTU",
+            "target": "TECH",
+            "value": 0.9527443147976774
+        },
+        {
+            "source": "AMAT",
+            "target": "TECH",
+            "value": 0.9700446173419004
+        },
+        {
+            "source": "ADI",
+            "target": "TECH",
+            "value": 0.9765552008272218
+        },
+        {
+            "source": "MASI",
+            "target": "PCVX",
+            "value": 0.9569762120529604
+        },
+        {
+            "source": "WSC",
+            "target": "PCVX",
+            "value": 0.953038883129558
+        },
+        {
+            "source": "KLAC",
+            "target": "PCVX",
+            "value": 0.9593101250408664
+        },
+        {
+            "source": "MCHP",
+            "target": "HSIC",
+            "value": 0.9525172495463334
+        },
+        {
+            "source": "GFS",
+            "target": "HSIC",
+            "value": 0.9513851347302608
+        },
+        {
+            "source": "AMAT",
+            "target": "HSIC",
+            "value": 0.9661535161406076
+        },
+        {
+            "source": "TRMB",
+            "target": "MASI",
+            "value": 0.955306230945578
+        },
+        {
+            "source": "FYBR",
+            "target": "MASI",
+            "value": 0.9598912694422624
+        },
+        {
+            "source": "ILMN",
+            "target": "RGEN",
+            "value": 0.9519561017306818
+        },
+        {
+            "source": "CGNX",
+            "target": "RGEN",
+            "value": 0.9593633464547424
+        },
+        {
+            "source": "MKSI",
+            "target": "RGEN",
+            "value": 0.9752286296794606
+        },
+        {
+            "source": "CSX",
+            "target": "RGEN",
+            "value": 0.9615646980099058
+        },
+        {
+            "source": "ODFL",
+            "target": "RGEN",
+            "value": 0.9608544879603086
+        },
+        {
+            "source": "ENTG",
+            "target": "RGEN",
+            "value": 0.9769659962678292
+        },
+        {
+            "source": "LOPE",
+            "target": "RGEN",
+            "value": 0.96607205058138
+        },
+        {
+            "source": "SBRA",
+            "target": "RGEN",
+            "value": 0.96810093199767
+        },
+        {
+            "source": "LAUR",
+            "target": "RGEN",
+            "value": 0.9629512135637072
+        },
+        {
+            "source": "MDB",
+            "target": "RGEN",
+            "value": 0.9511164200031804
+        },
+        {
+            "source": "NTAP",
+            "target": "RGEN",
+            "value": 0.9554470195586768
+        },
+        {
+            "source": "MSFT",
+            "target": "RGEN",
+            "value": 0.9653089642330374
+        },
+        {
+            "source": "AVGO",
+            "target": "RGEN",
+            "value": 0.969327848403305
+        },
+        {
+            "source": "QCOM",
+            "target": "RGEN",
+            "value": 0.9588858192751872
+        },
+        {
+            "source": "AMAT",
+            "target": "RGEN",
+            "value": 0.9783073649353072
+        },
+        {
+            "source": "ADI",
+            "target": "RGEN",
+            "value": 0.9615476031187328
+        },
+        {
+            "source": "KLAC",
+            "target": "RGEN",
+            "value": 0.9774461635448076
+        },
+        {
+            "source": "FFIV",
+            "target": "RGEN",
+            "value": 0.9594920156146276
+        },
+        {
+            "source": "MKSI",
+            "target": "HALO",
+            "value": 0.9501753560397356
+        },
+        {
+            "source": "INTU",
+            "target": "HALO",
+            "value": 0.964756579368901
+        },
+        {
+            "source": "ITRI",
+            "target": "RVMD",
+            "value": 0.9500962619161516
+        },
+        {
+            "source": "ROAD",
+            "target": "LEGN",
+            "value": 0.9525018929267776
+        },
+        {
+            "source": "AGNCN",
+            "target": "LEGN",
+            "value": 0.9538909571769394
+        },
+        {
+            "source": "FYBR",
+            "target": "LEGN",
+            "value": 0.9755551139464278
+        },
+        {
+            "source": "MKSI",
+            "target": "NUVL",
+            "value": 0.9655345644274548
+        },
+        {
+            "source": "IESC",
+            "target": "NUVL",
+            "value": 0.9688134010033768
+        },
+        {
+            "source": "MIDD",
+            "target": "NUVL",
+            "value": 0.9511926902827916
+        },
+        {
+            "source": "CSX",
+            "target": "NUVL",
+            "value": 0.9846985237117512
+        },
+        {
+            "source": "ODFL",
+            "target": "NUVL",
+            "value": 0.9550989056556078
+        },
+        {
+            "source": "HST",
+            "target": "NUVL",
+            "value": 0.9691550495390252
+        },
+        {
+            "source": "MCHP",
+            "target": "NUVL",
+            "value": 0.9693124400709244
+        },
+        {
+            "source": "FTNT",
+            "target": "NUVL",
+            "value": 0.95666992483278
+        },
+        {
+            "source": "MSFT",
+            "target": "NUVL",
+            "value": 0.9614839883716148
+        },
+        {
+            "source": "AVGO",
+            "target": "NUVL",
+            "value": 0.9606308965593532
+        },
+        {
+            "source": "INTU",
+            "target": "NUVL",
+            "value": 0.9601726919831264
+        },
+        {
+            "source": "LRCX",
+            "target": "NUVL",
+            "value": 0.9664285053285636
+        },
+        {
+            "source": "FFIV",
+            "target": "NUVL",
+            "value": 0.9775975246326506
+        },
+        {
+            "source": "AAPL",
+            "target": "OPCH",
+            "value": 0.9760434062381342
+        },
+        {
+            "source": "META",
+            "target": "ISRG",
+            "value": 0.9598581700521944
+        },
+        {
+            "source": "WSC",
+            "target": "REGN",
+            "value": 0.9740410045554988
+        },
+        {
+            "source": "IESC",
+            "target": "DXCM",
+            "value": 0.9554624993046296
+        },
+        {
+            "source": "CGNX",
+            "target": "ILMN",
+            "value": 0.9717913146446214
+        },
+        {
+            "source": "IESC",
+            "target": "ILMN",
+            "value": 0.966527959377322
+        },
+        {
+            "source": "MIDD",
+            "target": "ILMN",
+            "value": 0.9674062972455112
+        },
+        {
+            "source": "TER",
+            "target": "ILMN",
+            "value": 0.9773467744292288
+        },
+        {
+            "source": "TRMB",
+            "target": "ILMN",
+            "value": 0.9695299542827372
+        },
+        {
+            "source": "CTLP",
+            "target": "ILMN",
+            "value": 0.9543798553704852
+        },
+        {
+            "source": "HST",
+            "target": "ILMN",
+            "value": 0.967414362634005
+        },
+        {
+            "source": "GFS",
+            "target": "ILMN",
+            "value": 0.9623253476389864
+        },
+        {
+            "source": "SNPS",
+            "target": "ILMN",
+            "value": 0.9654762751784404
+        },
+        {
+            "source": "AMAT",
+            "target": "ILMN",
+            "value": 0.9571841658831752
+        },
+        {
+            "source": "MATW",
+            "target": "ILMN",
+            "value": 0.9538462500372432
+        },
+        {
+            "source": "AAON",
+            "target": "ALGN",
+            "value": 0.9512422350983536
+        },
+        {
+            "source": "SNPS",
+            "target": "ALGN",
+            "value": 0.96764084745348
+        },
+        {
+            "source": "INTU",
+            "target": "ALGN",
+            "value": 0.9665771429540162
+        },
+        {
+            "source": "REKR",
+            "target": "ALGN",
+            "value": 0.9504740023543976
+        },
+        {
+            "source": "WSC",
+            "target": "LSTR",
+            "value": 0.9536989963256024
+        },
+        {
+            "source": "LOPE",
+            "target": "LSTR",
+            "value": 0.9569517204098408
+        },
+        {
+            "source": "EA",
+            "target": "LSTR",
+            "value": 0.9541648278966852
+        },
+        {
+            "source": "ADI",
+            "target": "LSTR",
+            "value": 0.9533768571406044
+        },
+        {
+            "source": "KLAC",
+            "target": "LSTR",
+            "value": 0.9508183785130224
+        },
+        {
+            "source": "CSWI",
+            "target": "CGNX",
+            "value": 0.958009974639311
+        },
+        {
+            "source": "MIDD",
+            "target": "CGNX",
+            "value": 0.985666694953635
+        },
+        {
+            "source": "STLD",
+            "target": "CGNX",
+            "value": 0.9692001849186924
+        },
+        {
+            "source": "TER",
+            "target": "CGNX",
+            "value": 0.970043283948486
+        },
+        {
+            "source": "ENTG",
+            "target": "CGNX",
+            "value": 0.9657404907987092
+        },
+        {
+            "source": "TRMB",
+            "target": "CGNX",
+            "value": 0.9545773826276231
+        },
+        {
+            "source": "ENVX",
+            "target": "CGNX",
+            "value": 0.9535758675786252
+        },
+        {
+            "source": "GLPI",
+            "target": "CGNX",
+            "value": 0.950743060788896
+        },
+        {
+            "source": "DDOG",
+            "target": "CGNX",
+            "value": 0.9847124753218331
+        },
+        {
+            "source": "SNPS",
+            "target": "CGNX",
+            "value": 0.976534461489776
+        },
+        {
+            "source": "MSFT",
+            "target": "CGNX",
+            "value": 0.9840753443757052
+        },
+        {
+            "source": "AVGO",
+            "target": "CGNX",
+            "value": 0.950678171172705
+        },
+        {
+            "source": "INTU",
+            "target": "CGNX",
+            "value": 0.9875001572056784
+        },
+        {
+            "source": "AMAT",
+            "target": "CGNX",
+            "value": 0.962238110105517
+        },
+        {
+            "source": "LRCX",
+            "target": "CGNX",
+            "value": 0.9565760224722796
+        },
+        {
+            "source": "KLAC",
+            "target": "CGNX",
+            "value": 0.9619781748689676
+        },
+        {
+            "source": "LLYVK",
+            "target": "LLYVA",
+            "value": 0.9976184112562316
+        },
+        {
+            "source": "ROAD",
+            "target": "LLYVA",
+            "value": 0.9529831539642636
+        },
+        {
+            "source": "LAUR",
+            "target": "LLYVA",
+            "value": 0.9672824006378716
+        },
+        {
+            "source": "ADI",
+            "target": "LLYVA",
+            "value": 0.9717069599075918
+        },
+        {
+            "source": "ROAD",
+            "target": "LLYVK",
+            "value": 0.9606608515156586
+        },
+        {
+            "source": "LAUR",
+            "target": "LLYVK",
+            "value": 0.9600832078466413
+        },
+        {
+            "source": "ADI",
+            "target": "LLYVK",
+            "value": 0.970050126990152
+        },
+        {
+            "source": "WSC",
+            "target": "MKSI",
+            "value": 0.9583308040463514
+        },
+        {
+            "source": "CSWI",
+            "target": "MKSI",
+            "value": 0.9558217792354428
+        },
+        {
+            "source": "IESC",
+            "target": "MKSI",
+            "value": 0.9595199590421276
+        },
+        {
+            "source": "HEES",
+            "target": "MKSI",
+            "value": 0.9729773881983012
+        },
+        {
+            "source": "TER",
+            "target": "MKSI",
+            "value": 0.996997051560774
+        },
+        {
+            "source": "FTAI",
+            "target": "MKSI",
+            "value": 0.9522654791188558
+        },
+        {
+            "source": "ENTG",
+            "target": "MKSI",
+            "value": 0.99612323516027
+        },
+        {
+            "source": "TRMB",
+            "target": "MKSI",
+            "value": 0.9743701927391664
+        },
+        {
+            "source": "HST",
+            "target": "MKSI",
+            "value": 0.9890657307105928
+        },
+        {
+            "source": "LOPE",
+            "target": "MKSI",
+            "value": 0.9548014143653768
+        },
+        {
+            "source": "MDB",
+            "target": "MKSI",
+            "value": 0.9761513354523592
+        },
+        {
+            "source": "MCHP",
+            "target": "MKSI",
+            "value": 0.9717969015059092
+        },
+        {
+            "source": "GFS",
+            "target": "MKSI",
+            "value": 0.978770343843332
+        },
+        {
+            "source": "SNPS",
+            "target": "MKSI",
+            "value": 0.9893918911460264
+        },
+        {
+            "source": "CDNS",
+            "target": "MKSI",
+            "value": 0.9851345041828928
+        },
+        {
+            "source": "MSFT",
+            "target": "MKSI",
+            "value": 0.9772676957304444
+        },
+        {
+            "source": "AVGO",
+            "target": "MKSI",
+            "value": 0.9909843897438856
+        },
+        {
+            "source": "INTU",
+            "target": "MKSI",
+            "value": 0.9668264747317956
+        },
+        {
+            "source": "AAPL",
+            "target": "MKSI",
+            "value": 0.9682850069529572
+        },
+        {
+            "source": "AMAT",
+            "target": "MKSI",
+            "value": 0.9931101747576786
+        },
+        {
+            "source": "PANW",
+            "target": "MKSI",
+            "value": 0.9521713235575454
+        },
+        {
+            "source": "LRCX",
+            "target": "MKSI",
+            "value": 0.9955042700045617
+        },
+        {
+            "source": "ADI",
+            "target": "MKSI",
+            "value": 0.9752275066231558
+        },
+        {
+            "source": "KLAC",
+            "target": "MKSI",
+            "value": 0.9937550236292018
+        },
+        {
+            "source": "TXN",
+            "target": "MKSI",
+            "value": 0.977119237280313
+        },
+        {
+            "source": "REKR",
+            "target": "MKSI",
+            "value": 0.9681583610738504
+        },
+        {
+            "source": "FFIV",
+            "target": "MKSI",
+            "value": 0.9887902407305398
+        },
+        {
+            "source": "BKR",
+            "target": "WSC",
+            "value": 0.95341003678613
+        },
+        {
+            "source": "FLNC",
+            "target": "WSC",
+            "value": 0.9552574100736202
+        },
+        {
+            "source": "LOPE",
+            "target": "WSC",
+            "value": 0.9651117318365924
+        },
+        {
+            "source": "SBRA",
+            "target": "WSC",
+            "value": 0.9521171335975092
+        },
+        {
+            "source": "LAUR",
+            "target": "WSC",
+            "value": 0.9674882583880796
+        },
+        {
+            "source": "SSNC",
+            "target": "WSC",
+            "value": 0.9521075020339634
+        },
+        {
+            "source": "ITRI",
+            "target": "CSWI",
+            "value": 0.958654843804555
+        },
+        {
+            "source": "IESC",
+            "target": "CSWI",
+            "value": 0.9567179605883184
+        },
+        {
+            "source": "TRMB",
+            "target": "CSWI",
+            "value": 0.9685696206548924
+        },
+        {
+            "source": "ENVX",
+            "target": "CSWI",
+            "value": 0.96114908342018
+        },
+        {
+            "source": "HST",
+            "target": "CSWI",
+            "value": 0.9537175166644416
+        },
+        {
+            "source": "DDOG",
+            "target": "CSWI",
+            "value": 0.9538432716020602
+        },
+        {
+            "source": "MDB",
+            "target": "CSWI",
+            "value": 0.9902027336460278
+        },
+        {
+            "source": "MCHP",
+            "target": "CSWI",
+            "value": 0.9509370638221248
+        },
+        {
+            "source": "SNPS",
+            "target": "CSWI",
+            "value": 0.9720412299365134
+        },
+        {
+            "source": "CDNS",
+            "target": "CSWI",
+            "value": 0.9700923529070472
+        },
+        {
+            "source": "AVGO",
+            "target": "CSWI",
+            "value": 0.9582186698343904
+        },
+        {
+            "source": "BWEN",
+            "target": "CSWI",
+            "value": 0.9534409750863374
+        },
+        {
+            "source": "FFIV",
+            "target": "CSWI",
+            "value": 0.9549127178480488
+        },
+        {
+            "source": "ZD",
+            "target": "CSWI",
+            "value": 0.9671855344977872
+        },
+        {
+            "source": "CLFD",
+            "target": "CSWI",
+            "value": 0.9515908843198464
+        },
+        {
+            "source": "NTGR",
+            "target": "CSWI",
+            "value": 0.9676293263425764
+        },
+        {
+            "source": "SNPS",
+            "target": "STRL",
+            "value": 0.957526993884688
+        },
+        {
+            "source": "BCPC",
+            "target": "ITRI",
+            "value": 0.9621935494964136
+        },
+        {
+            "source": "MSFT",
+            "target": "ITRI",
+            "value": 0.9576408498008544
+        },
+        {
+            "source": "PCYO",
+            "target": "ITRI",
+            "value": 0.9733591941026524
+        },
+        {
+            "source": "ROAD",
+            "target": "IESC",
+            "value": 0.9656647199614938
+        },
+        {
+            "source": "MIDD",
+            "target": "IESC",
+            "value": 0.9671439271229232
+        },
+        {
+            "source": "TER",
+            "target": "IESC",
+            "value": 0.9719032789168977
+        },
+        {
+            "source": "ENTG",
+            "target": "IESC",
+            "value": 0.9590801899819732
+        },
+        {
+            "source": "MDB",
+            "target": "IESC",
+            "value": 0.9631992371355136
+        },
+        {
+            "source": "MCHP",
+            "target": "IESC",
+            "value": 0.966373785910729
+        },
+        {
+            "source": "SNPS",
+            "target": "IESC",
+            "value": 0.9887871947823486
+        },
+        {
+            "source": "FTNT",
+            "target": "IESC",
+            "value": 0.9578654542319754
+        },
+        {
+            "source": "INTU",
+            "target": "IESC",
+            "value": 0.9596358344882197
+        },
+        {
+            "source": "AMAT",
+            "target": "IESC",
+            "value": 0.9710078264055694
+        },
+        {
+            "source": "ADI",
+            "target": "IESC",
+            "value": 0.9594231816939433
+        },
+        {
+            "source": "ZD",
+            "target": "IESC",
+            "value": 0.9518477094821824
+        },
+        {
+            "source": "TER",
+            "target": "ROAD",
+            "value": 0.957821412444074
+        },
+        {
+            "source": "ENTG",
+            "target": "ROAD",
+            "value": 0.9736391486308468
+        },
+        {
+            "source": "TRMB",
+            "target": "ROAD",
+            "value": 0.9746137623069616
+        },
+        {
+            "source": "MCHP",
+            "target": "ROAD",
+            "value": 0.9509323041568016
+        },
+        {
+            "source": "AVGO",
+            "target": "ROAD",
+            "value": 0.9632333844460288
+        },
+        {
+            "source": "QCOM",
+            "target": "ROAD",
+            "value": 0.9690553838675312
+        },
+        {
+            "source": "AAPL",
+            "target": "ROAD",
+            "value": 0.9542484043759584
+        },
+        {
+            "source": "AMAT",
+            "target": "ROAD",
+            "value": 0.9624290149500172
+        },
+        {
+            "source": "LRCX",
+            "target": "ROAD",
+            "value": 0.9595888542292328
+        },
+        {
+            "source": "ADI",
+            "target": "ROAD",
+            "value": 0.9739336854435836
+        },
+        {
+            "source": "KLAC",
+            "target": "ROAD",
+            "value": 0.9871065204728866
+        },
+        {
+            "source": "BWEN",
+            "target": "ROAD",
+            "value": 0.9513153979633509
+        },
+        {
+            "source": "FFIV",
+            "target": "ROAD",
+            "value": 0.9579870421732888
+        },
+        {
+            "source": "HST",
+            "target": "HEES",
+            "value": 0.9525357677838114
+        },
+        {
+            "source": "SNPS",
+            "target": "HEES",
+            "value": 0.9548190768445994
+        },
+        {
+            "source": "INTU",
+            "target": "HEES",
+            "value": 0.951518699470466
+        },
+        {
+            "source": "AMAT",
+            "target": "HEES",
+            "value": 0.9614488015669276
+        },
+        {
+            "source": "KLAC",
+            "target": "HEES",
+            "value": 0.9644020790214952
+        },
+        {
+            "source": "CSX",
+            "target": "MIDD",
+            "value": 0.9584252877375355
+        },
+        {
+            "source": "HST",
+            "target": "MIDD",
+            "value": 0.9529830361129342
+        },
+        {
+            "source": "MDB",
+            "target": "MIDD",
+            "value": 0.978750171575764
+        },
+        {
+            "source": "SNPS",
+            "target": "MIDD",
+            "value": 0.9582833992886696
+        },
+        {
+            "source": "FTNT",
+            "target": "MIDD",
+            "value": 0.9587474014081456
+        },
+        {
+            "source": "AVGO",
+            "target": "MIDD",
+            "value": 0.9777957411287418
+        },
+        {
+            "source": "BWEN",
+            "target": "MIDD",
+            "value": 0.957255139361311
+        },
+        {
+            "source": "CTLP",
+            "target": "AAON",
+            "value": 0.957907807183954
+        },
+        {
+            "source": "HST",
+            "target": "HON",
+            "value": 0.9732814529150012
+        },
+        {
+            "source": "AVGO",
+            "target": "HON",
+            "value": 0.9564884823938576
+        },
+        {
+            "source": "INTU",
+            "target": "HON",
+            "value": 0.9768852597513368
+        },
+        {
+            "source": "AXON",
+            "target": "CSX",
+            "value": 0.9500949628123104
+        },
+        {
+            "source": "ODFL",
+            "target": "CSX",
+            "value": 0.9765609441073912
+        },
+        {
+            "source": "HST",
+            "target": "CSX",
+            "value": 0.981682849251438
+        },
+        {
+            "source": "SNPS",
+            "target": "CSX",
+            "value": 0.9664071644480708
+        },
+        {
+            "source": "AMAT",
+            "target": "CSX",
+            "value": 0.9552568697593772
+        },
+        {
+            "source": "CDZI",
+            "target": "CSX",
+            "value": 0.9554222475144222
+        },
+        {
+            "source": "SNPS",
+            "target": "AXON",
+            "value": 0.9636495549616606
+        },
+        {
+            "source": "TER",
+            "target": "ODFL",
+            "value": 0.9540896904611292
+        },
+        {
+            "source": "JBHT",
+            "target": "ODFL",
+            "value": 0.9531825563560496
+        },
+        {
+            "source": "SNPS",
+            "target": "ODFL",
+            "value": 0.9631049658751488
+        },
+        {
+            "source": "CDNS",
+            "target": "ODFL",
+            "value": 0.9745710132525413
+        },
+        {
+            "source": "INTU",
+            "target": "ODFL",
+            "value": 0.9618807102281312
+        },
+        {
+            "source": "AMAT",
+            "target": "ODFL",
+            "value": 0.9729124114121523
+        },
+        {
+            "source": "FFIV",
+            "target": "ODFL",
+            "value": 0.951062880576634
+        },
+        {
+            "source": "NTGR",
+            "target": "ODFL",
+            "value": 0.9642027726697022
+        },
+        {
+            "source": "FWONA",
+            "target": "FWONK",
+            "value": 0.9844520944172456
+        },
+        {
+            "source": "FOX",
+            "target": "FOXA",
+            "value": 0.9870092053878712
+        },
+        {
+            "source": "HST",
+            "target": "STLD",
+            "value": 0.9564755567587884
+        },
+        {
+            "source": "ENTG",
+            "target": "TER",
+            "value": 0.9846443651050836
+        },
+        {
+            "source": "LINC",
+            "target": "TER",
+            "value": 0.9556705379915716
+        },
+        {
+            "source": "HST",
+            "target": "TER",
+            "value": 0.9663319321154606
+        },
+        {
+            "source": "PECO",
+            "target": "TER",
+            "value": 0.9592485571848722
+        },
+        {
+            "source": "MDB",
+            "target": "TER",
+            "value": 0.9608849137253076
+        },
+        {
+            "source": "MCHP",
+            "target": "TER",
+            "value": 0.9914713397326566
+        },
+        {
+            "source": "GFS",
+            "target": "TER",
+            "value": 0.9873156938558976
+        },
+        {
+            "source": "SNPS",
+            "target": "TER",
+            "value": 0.985174903940232
+        },
+        {
+            "source": "CDNS",
+            "target": "TER",
+            "value": 0.9825001551114704
+        },
+        {
+            "source": "MSFT",
+            "target": "TER",
+            "value": 0.982920424584614
+        },
+        {
+            "source": "AVGO",
+            "target": "TER",
+            "value": 0.9864708392283632
+        },
+        {
+            "source": "QCOM",
+            "target": "TER",
+            "value": 0.9777774171981126
+        },
+        {
+            "source": "INTU",
+            "target": "TER",
+            "value": 0.9791126643557804
+        },
+        {
+            "source": "AMAT",
+            "target": "TER",
+            "value": 0.9793039826209016
+        },
+        {
+            "source": "LRCX",
+            "target": "TER",
+            "value": 0.9871260711423652
+        },
+        {
+            "source": "ADI",
+            "target": "TER",
+            "value": 0.9847261851111824
+        },
+        {
+            "source": "KLAC",
+            "target": "TER",
+            "value": 0.9791300453231032
+        },
+        {
+            "source": "TXN",
+            "target": "TER",
+            "value": 0.9788791434891194
+        },
+        {
+            "source": "FFIV",
+            "target": "TER",
+            "value": 0.9878052085136696
+        },
+        {
+            "source": "UDMY",
+            "target": "FTAI",
+            "value": 0.956725326923631
+        },
+        {
+            "source": "AVGO",
+            "target": "FTAI",
+            "value": 0.9575477152199108
+        },
+        {
+            "source": "TRMB",
+            "target": "ENTG",
+            "value": 0.9505619492925056
+        },
+        {
+            "source": "HST",
+            "target": "ENTG",
+            "value": 0.959796347304495
+        },
+        {
+            "source": "EA",
+            "target": "ENTG",
+            "value": 0.9612237627593166
+        },
+        {
+            "source": "DDOG",
+            "target": "ENTG",
+            "value": 0.9708899082931094
+        },
+        {
+            "source": "MDB",
+            "target": "ENTG",
+            "value": 0.9507695426429814
+        },
+        {
+            "source": "MCHP",
+            "target": "ENTG",
+            "value": 0.9753294975055244
+        },
+        {
+            "source": "GFS",
+            "target": "ENTG",
+            "value": 0.9561408018639324
+        },
+        {
+            "source": "SNPS",
+            "target": "ENTG",
+            "value": 0.9692163758872352
+        },
+        {
+            "source": "FTNT",
+            "target": "ENTG",
+            "value": 0.973203666615814
+        },
+        {
+            "source": "CDNS",
+            "target": "ENTG",
+            "value": 0.95306330034643
+        },
+        {
+            "source": "MSFT",
+            "target": "ENTG",
+            "value": 0.9695063087858996
+        },
+        {
+            "source": "AVGO",
+            "target": "ENTG",
+            "value": 0.9854253125373668
+        },
+        {
+            "source": "INTU",
+            "target": "ENTG",
+            "value": 0.9778712558078428
+        },
+        {
+            "source": "AMAT",
+            "target": "ENTG",
+            "value": 0.9916934417790604
+        },
+        {
+            "source": "LRCX",
+            "target": "ENTG",
+            "value": 0.9953787248148702
+        },
+        {
+            "source": "ADI",
+            "target": "ENTG",
+            "value": 0.9854116268211892
+        },
+        {
+            "source": "KLAC",
+            "target": "ENTG",
+            "value": 0.9940931306500594
+        },
+        {
+            "source": "TXN",
+            "target": "ENTG",
+            "value": 0.9698028511970396
+        },
+        {
+            "source": "FFIV",
+            "target": "ENTG",
+            "value": 0.9577367247439784
+        },
+        {
+            "source": "NTGR",
+            "target": "ENTG",
+            "value": 0.9636543979817146
+        },
+        {
+            "source": "HST",
+            "target": "TRMB",
+            "value": 0.9730205332376376
+        },
+        {
+            "source": "PECO",
+            "target": "TRMB",
+            "value": 0.973433687831344
+        },
+        {
+            "source": "MCHP",
+            "target": "TRMB",
+            "value": 0.9566812321554492
+        },
+        {
+            "source": "MSFT",
+            "target": "TRMB",
+            "value": 0.9774320367133114
+        },
+        {
+            "source": "AVGO",
+            "target": "TRMB",
+            "value": 0.9743352637877688
+        },
+        {
+            "source": "INTU",
+            "target": "TRMB",
+            "value": 0.9513299288759876
+        },
+        {
+            "source": "AMAT",
+            "target": "TRMB",
+            "value": 0.9790324591801391
+        },
+        {
+            "source": "ADI",
+            "target": "TRMB",
+            "value": 0.9813580886993016
+        },
+        {
+            "source": "TXN",
+            "target": "TRMB",
+            "value": 0.986209868509044
+        },
+        {
+            "source": "FFIV",
+            "target": "TRMB",
+            "value": 0.9748925120736616
+        },
+        {
+            "source": "ZD",
+            "target": "TRMB",
+            "value": 0.9527287474679456
+        },
+        {
+            "source": "SNPS",
+            "target": "ENVX",
+            "value": 0.9680448618171822
+        },
+        {
+            "source": "HST",
+            "target": "CTLP",
+            "value": 0.974301008212454
+        },
+        {
+            "source": "SNPS",
+            "target": "CTLP",
+            "value": 0.970191622417397
+        },
+        {
+            "source": "INTU",
+            "target": "CTLP",
+            "value": 0.9571718287293388
+        },
+        {
+            "source": "LRCX",
+            "target": "CTLP",
+            "value": 0.9510991112335132
+        },
+        {
+            "source": "MATW",
+            "target": "CTLP",
+            "value": 0.9542587085464777
+        },
+        {
+            "source": "FTNT",
+            "target": "UNIT",
+            "value": 0.9516765213221025
+        },
+        {
+            "source": "NYMT",
+            "target": "UDMY",
+            "value": 0.9505439212774256
+        },
+        {
+            "source": "PCH",
+            "target": "NYMT",
+            "value": 0.9602668629327236
+        },
+        {
+            "source": "CDNS",
+            "target": "NYMT",
+            "value": 0.9537343453568162
+        },
+        {
+            "source": "INTU",
+            "target": "NYMT",
+            "value": 0.9731846724903408
+        },
+        {
+            "source": "WDAY",
+            "target": "LINC",
+            "value": 0.9567944189743598
+        },
+        {
+            "source": "PCYO",
+            "target": "LINC",
+            "value": 0.9556587979315329
+        },
+        {
+            "source": "AAPL",
+            "target": "ROIC",
+            "value": 0.9629148730217174
+        },
+        {
+            "source": "ZD",
+            "target": "ROIC",
+            "value": 0.9513030003740792
+        },
+        {
+            "source": "AAPL",
+            "target": "REG",
+            "value": 0.9538279236714582
+        },
+        {
+            "source": "MDB",
+            "target": "HST",
+            "value": 0.9718188670627216
+        },
+        {
+            "source": "MCHP",
+            "target": "HST",
+            "value": 0.9525791557571835
+        },
+        {
+            "source": "GFS",
+            "target": "HST",
+            "value": 0.9711927640137326
+        },
+        {
+            "source": "SNPS",
+            "target": "HST",
+            "value": 0.9846231365414262
+        },
+        {
+            "source": "FTNT",
+            "target": "HST",
+            "value": 0.966789746051983
+        },
+        {
+            "source": "QCOM",
+            "target": "HST",
+            "value": 0.9778424593560964
+        },
+        {
+            "source": "INTU",
+            "target": "HST",
+            "value": 0.9542160639766798
+        },
+        {
+            "source": "AAPL",
+            "target": "HST",
+            "value": 0.9740542200596708
+        },
+        {
+            "source": "LRCX",
+            "target": "HST",
+            "value": 0.9534410895063856
+        },
+        {
+            "source": "ADI",
+            "target": "HST",
+            "value": 0.9612784843687512
+        },
+        {
+            "source": "TXN",
+            "target": "HST",
+            "value": 0.9774229006824634
+        },
+        {
+            "source": "FFIV",
+            "target": "HST",
+            "value": 0.965761643767283
+        },
+        {
+            "source": "NTGR",
+            "target": "HST",
+            "value": 0.9581727137919348
+        },
+        {
+            "source": "QCOM",
+            "target": "LOPE",
+            "value": 0.9539619118226644
+        },
+        {
+            "source": "REKR",
+            "target": "LOPE",
+            "value": 0.9501117671973666
+        },
+        {
+            "source": "PANW",
+            "target": "PECO",
+            "value": 0.9600085653931676
+        },
+        {
+            "source": "AAPL",
+            "target": "SBRA",
+            "value": 0.9557047702759196
+        },
+        {
+            "source": "DDOG",
+            "target": "LAUR",
+            "value": 0.9704288852237098
+        },
+        {
+            "source": "KLAC",
+            "target": "LAUR",
+            "value": 0.953590159903442
+        },
+        {
+            "source": "REKR",
+            "target": "LAUR",
+            "value": 0.9529077537894016
+        },
+        {
+            "source": "FTNT",
+            "target": "EA",
+            "value": 0.962103257259729
+        },
+        {
+            "source": "MSFT",
+            "target": "EA",
+            "value": 0.9796357264351168
+        },
+        {
+            "source": "INTU",
+            "target": "EA",
+            "value": 0.9557167437338644
+        },
+        {
+            "source": "AMAT",
+            "target": "EA",
+            "value": 0.954173338766262
+        },
+        {
+            "source": "LRCX",
+            "target": "EA",
+            "value": 0.9649807992621448
+        },
+        {
+            "source": "ZD",
+            "target": "EA",
+            "value": 0.9563068237643628
+        },
+        {
+            "source": "SNPS",
+            "target": "TTD",
+            "value": 0.967687643680754
+        },
+        {
+            "source": "MDB",
+            "target": "DDOG",
+            "value": 0.9673219503795656
+        },
+        {
+            "source": "FTNT",
+            "target": "DDOG",
+            "value": 0.957223925913097
+        },
+        {
+            "source": "MSFT",
+            "target": "DDOG",
+            "value": 0.9784845899334376
+        },
+        {
+            "source": "AVGO",
+            "target": "DDOG",
+            "value": 0.974839343590168
+        },
+        {
+            "source": "INTU",
+            "target": "DDOG",
+            "value": 0.9749345672043438
+        },
+        {
+            "source": "AAPL",
+            "target": "DDOG",
+            "value": 0.9802559482680688
+        },
+        {
+            "source": "AMAT",
+            "target": "DDOG",
+            "value": 0.952504655673594
+        },
+        {
+            "source": "LRCX",
+            "target": "DDOG",
+            "value": 0.9753934571045144
+        },
+        {
+            "source": "ADI",
+            "target": "DDOG",
+            "value": 0.9511464497869264
+        },
+        {
+            "source": "KLAC",
+            "target": "DDOG",
+            "value": 0.953697757504107
+        },
+        {
+            "source": "FFIV",
+            "target": "DDOG",
+            "value": 0.9717508633154692
+        },
+        {
+            "source": "MCHP",
+            "target": "MDB",
+            "value": 0.9601585161377282
+        },
+        {
+            "source": "SNPS",
+            "target": "MDB",
+            "value": 0.9782116390878908
+        },
+        {
+            "source": "FTNT",
+            "target": "MDB",
+            "value": 0.9588987834963107
+        },
+        {
+            "source": "CDNS",
+            "target": "MDB",
+            "value": 0.9872945111929934
+        },
+        {
+            "source": "MSFT",
+            "target": "MDB",
+            "value": 0.961403769325332
+        },
+        {
+            "source": "AVGO",
+            "target": "MDB",
+            "value": 0.986627836756936
+        },
+        {
+            "source": "INTU",
+            "target": "MDB",
+            "value": 0.9861692482588108
+        },
+        {
+            "source": "AMAT",
+            "target": "MDB",
+            "value": 0.9518974827214932
+        },
+        {
+            "source": "LRCX",
+            "target": "MDB",
+            "value": 0.9775948550930031
+        },
+        {
+            "source": "ADI",
+            "target": "MDB",
+            "value": 0.960036209537482
+        },
+        {
+            "source": "MATW",
+            "target": "MDB",
+            "value": 0.9695465952302624
+        },
+        {
+            "source": "FFIV",
+            "target": "MDB",
+            "value": 0.980062746808846
+        },
+        {
+            "source": "ZD",
+            "target": "MDB",
+            "value": 0.9727013534693548
+        },
+        {
+            "source": "NTGR",
+            "target": "MDB",
+            "value": 0.965954165320659
+        },
+        {
+            "source": "GFS",
+            "target": "MCHP",
+            "value": 0.9744826182286664
+        },
+        {
+            "source": "SNPS",
+            "target": "MCHP",
+            "value": 0.9774062033812888
+        },
+        {
+            "source": "FTNT",
+            "target": "MCHP",
+            "value": 0.9781001903687956
+        },
+        {
+            "source": "CDNS",
+            "target": "MCHP",
+            "value": 0.9701812951026588
+        },
+        {
+            "source": "AVGO",
+            "target": "MCHP",
+            "value": 0.9505101703165768
+        },
+        {
+            "source": "QCOM",
+            "target": "MCHP",
+            "value": 0.9550759011603048
+        },
+        {
+            "source": "INTU",
+            "target": "MCHP",
+            "value": 0.952955258993326
+        },
+        {
+            "source": "AAPL",
+            "target": "MCHP",
+            "value": 0.95196480382349
+        },
+        {
+            "source": "AMAT",
+            "target": "MCHP",
+            "value": 0.9574860854479692
+        },
+        {
+            "source": "LRCX",
+            "target": "MCHP",
+            "value": 0.9693429761892992
+        },
+        {
+            "source": "ADI",
+            "target": "MCHP",
+            "value": 0.98761233498282
+        },
+        {
+            "source": "KLAC",
+            "target": "MCHP",
+            "value": 0.9560756549945332
+        },
+        {
+            "source": "TXN",
+            "target": "MCHP",
+            "value": 0.9820252979374418
+        },
+        {
+            "source": "FFIV",
+            "target": "MCHP",
+            "value": 0.972960604297154
+        },
+        {
+            "source": "ZD",
+            "target": "MCHP",
+            "value": 0.9508169258283568
+        },
+        {
+            "source": "MU",
+            "target": "NTAP",
+            "value": 0.9745529061777324
+        },
+        {
+            "source": "SNPS",
+            "target": "GFS",
+            "value": 0.9624248558326682
+        },
+        {
+            "source": "CDNS",
+            "target": "GFS",
+            "value": 0.9548566498252742
+        },
+        {
+            "source": "AVGO",
+            "target": "GFS",
+            "value": 0.97592607094731
+        },
+        {
+            "source": "AAPL",
+            "target": "GFS",
+            "value": 0.9802128385006292
+        },
+        {
+            "source": "LRCX",
+            "target": "GFS",
+            "value": 0.9698959780280788
+        },
+        {
+            "source": "ADI",
+            "target": "GFS",
+            "value": 0.974782175780023
+        },
+        {
+            "source": "TXN",
+            "target": "GFS",
+            "value": 0.9872261616553256
+        },
+        {
+            "source": "FFIV",
+            "target": "GFS",
+            "value": 0.9531370142296764
+        },
+        {
+            "source": "ZD",
+            "target": "GFS",
+            "value": 0.9585707408901908
+        },
+        {
+            "source": "FTNT",
+            "target": "VRSN",
+            "value": 0.9774032641362612
+        },
+        {
+            "source": "ZD",
+            "target": "VRSN",
+            "value": 0.9565618077334396
+        },
+        {
+            "source": "FTNT",
+            "target": "SNPS",
+            "value": 0.9537417410817308
+        },
+        {
+            "source": "CDNS",
+            "target": "SNPS",
+            "value": 0.9664852835557134
+        },
+        {
+            "source": "MSFT",
+            "target": "SNPS",
+            "value": 0.9791674916801326
+        },
+        {
+            "source": "AVGO",
+            "target": "SNPS",
+            "value": 0.98599812135628
+        },
+        {
+            "source": "QCOM",
+            "target": "SNPS",
+            "value": 0.972568626239392
+        },
+        {
+            "source": "INTU",
+            "target": "SNPS",
+            "value": 0.987312606701422
+        },
+        {
+            "source": "AMAT",
+            "target": "SNPS",
+            "value": 0.9800047290218478
+        },
+        {
+            "source": "LRCX",
+            "target": "SNPS",
+            "value": 0.9738171349302752
+        },
+        {
+            "source": "ADI",
+            "target": "SNPS",
+            "value": 0.9673253918241608
+        },
+        {
+            "source": "KLAC",
+            "target": "SNPS",
+            "value": 0.968589198121574
+        },
+        {
+            "source": "TXN",
+            "target": "SNPS",
+            "value": 0.9572045220701548
+        },
+        {
+            "source": "FFIV",
+            "target": "SNPS",
+            "value": 0.9883114575556085
+        },
+        {
+            "source": "ZD",
+            "target": "SNPS",
+            "value": 0.9709312237839548
+        },
+        {
+            "source": "NTGR",
+            "target": "SNPS",
+            "value": 0.9625410661727026
+        },
+        {
+            "source": "AVGO",
+            "target": "ANSS",
+            "value": 0.9628927696055348
+        },
+        {
+            "source": "CDNS",
+            "target": "FTNT",
+            "value": 0.9612733667621592
+        },
+        {
+            "source": "AVGO",
+            "target": "FTNT",
+            "value": 0.9612336357514492
+        },
+        {
+            "source": "INTU",
+            "target": "FTNT",
+            "value": 0.9625951599981916
+        },
+        {
+            "source": "LRCX",
+            "target": "FTNT",
+            "value": 0.9586749774212666
+        },
+        {
+            "source": "ADI",
+            "target": "FTNT",
+            "value": 0.9687172931860925
+        },
+        {
+            "source": "ZD",
+            "target": "FTNT",
+            "value": 0.9799863521529149
+        },
+        {
+            "source": "MSFT",
+            "target": "CDNS",
+            "value": 0.969210331199438
+        },
+        {
+            "source": "AVGO",
+            "target": "CDNS",
+            "value": 0.9737907134492266
+        },
+        {
+            "source": "INTU",
+            "target": "CDNS",
+            "value": 0.983577205508254
+        },
+        {
+            "source": "AMAT",
+            "target": "CDNS",
+            "value": 0.9537372105198528
+        },
+        {
+            "source": "LRCX",
+            "target": "CDNS",
+            "value": 0.9789928723358018
+        },
+        {
+            "source": "ADI",
+            "target": "CDNS",
+            "value": 0.9597338636686996
+        },
+        {
+            "source": "FFIV",
+            "target": "CDNS",
+            "value": 0.9769364032638956
+        },
+        {
+            "source": "NTGR",
+            "target": "CDNS",
+            "value": 0.9588047965324392
+        },
+        {
+            "source": "AVGO",
+            "target": "MSFT",
+            "value": 0.9644899529627412
+        },
+        {
+            "source": "QCOM",
+            "target": "MSFT",
+            "value": 0.9842869931435791
+        },
+        {
+            "source": "INTU",
+            "target": "MSFT",
+            "value": 0.9662341077128564
+        },
+        {
+            "source": "AAPL",
+            "target": "MSFT",
+            "value": 0.966605161610862
+        },
+        {
+            "source": "AMAT",
+            "target": "MSFT",
+            "value": 0.9932130630114404
+        },
+        {
+            "source": "LRCX",
+            "target": "MSFT",
+            "value": 0.9603537655962976
+        },
+        {
+            "source": "KLAC",
+            "target": "MSFT",
+            "value": 0.9858760491661168
+        },
+        {
+            "source": "FFIV",
+            "target": "MSFT",
+            "value": 0.969495832693238
+        },
+        {
+            "source": "GOOGL",
+            "target": "GOOG",
+            "value": 0.9986779033528466
+        },
+        {
+            "source": "INTU",
+            "target": "AVGO",
+            "value": 0.9854573980737708
+        },
+        {
+            "source": "AAPL",
+            "target": "AVGO",
+            "value": 0.9708793373565164
+        },
+        {
+            "source": "AMAT",
+            "target": "AVGO",
+            "value": 0.9860328922175072
+        },
+        {
+            "source": "LRCX",
+            "target": "AVGO",
+            "value": 0.988832565321037
+        },
+        {
+            "source": "ADI",
+            "target": "AVGO",
+            "value": 0.9720126018826782
+        },
+        {
+            "source": "KLAC",
+            "target": "AVGO",
+            "value": 0.9879005274369008
+        },
+        {
+            "source": "TXN",
+            "target": "AVGO",
+            "value": 0.9606008157216144
+        },
+        {
+            "source": "REKR",
+            "target": "AVGO",
+            "value": 0.9591539736925186
+        },
+        {
+            "source": "FFIV",
+            "target": "AVGO",
+            "value": 0.954341471093293
+        },
+        {
+            "source": "NTGR",
+            "target": "AVGO",
+            "value": 0.9704061486798884
+        },
+        {
+            "source": "AMAT",
+            "target": "QCOM",
+            "value": 0.9865023178893452
+        },
+        {
+            "source": "LRCX",
+            "target": "QCOM",
+            "value": 0.9896800447183428
+        },
+        {
+            "source": "ADI",
+            "target": "QCOM",
+            "value": 0.9719420661016848
+        },
+        {
+            "source": "TXN",
+            "target": "QCOM",
+            "value": 0.9566845994323052
+        },
+        {
+            "source": "AMAT",
+            "target": "INTU",
+            "value": 0.9868619651049416
+        },
+        {
+            "source": "PANW",
+            "target": "INTU",
+            "value": 0.9556920118165378
+        },
+        {
+            "source": "LRCX",
+            "target": "INTU",
+            "value": 0.9749261568869304
+        },
+        {
+            "source": "ADI",
+            "target": "INTU",
+            "value": 0.96577940611004
+        },
+        {
+            "source": "FFIV",
+            "target": "INTU",
+            "value": 0.9852860438503016
+        },
+        {
+            "source": "ZD",
+            "target": "INTU",
+            "value": 0.956381073761886
+        },
+        {
+            "source": "CDZI",
+            "target": "INTU",
+            "value": 0.9659378035305888
+        },
+        {
+            "source": "NTGR",
+            "target": "INTU",
+            "value": 0.9695839114648972
+        },
+        {
+            "source": "LRCX",
+            "target": "AAPL",
+            "value": 0.9750522322225226
+        },
+        {
+            "source": "TXN",
+            "target": "AAPL",
+            "value": 0.9626107591445696
+        },
+        {
+            "source": "FFIV",
+            "target": "AAPL",
+            "value": 0.9657743853368967
+        },
+        {
+            "source": "LRCX",
+            "target": "AMAT",
+            "value": 0.9985835456374949
+        },
+        {
+            "source": "ADI",
+            "target": "AMAT",
+            "value": 0.9795233166245666
+        },
+        {
+            "source": "KLAC",
+            "target": "AMAT",
+            "value": 0.99443515897844
+        },
+        {
+            "source": "TXN",
+            "target": "AMAT",
+            "value": 0.9635980584088956
+        },
+        {
+            "source": "FFIV",
+            "target": "AMAT",
+            "value": 0.9696372793012747
+        },
+        {
+            "source": "NTGR",
+            "target": "AMAT",
+            "value": 0.9522099491963312
+        },
+        {
+            "source": "CRWD",
+            "target": "APP",
+            "value": 0.9536146802097984
+        },
+        {
+            "source": "ADI",
+            "target": "LRCX",
+            "value": 0.978730221330964
+        },
+        {
+            "source": "KLAC",
+            "target": "LRCX",
+            "value": 0.9916976778225808
+        },
+        {
+            "source": "TXN",
+            "target": "LRCX",
+            "value": 0.9728961174638328
+        },
+        {
+            "source": "REKR",
+            "target": "LRCX",
+            "value": 0.9643637528537864
+        },
+        {
+            "source": "FFIV",
+            "target": "LRCX",
+            "value": 0.9764413134240642
+        },
+        {
+            "source": "KLAC",
+            "target": "ADI",
+            "value": 0.9860642427944624
+        },
+        {
+            "source": "TXN",
+            "target": "ADI",
+            "value": 0.994944028564706
+        },
+        {
+            "source": "REKR",
+            "target": "ADI",
+            "value": 0.9532301277342968
+        },
+        {
+            "source": "TXN",
+            "target": "KLAC",
+            "value": 0.9576666769389466
+        },
+        {
+            "source": "FFIV",
+            "target": "KLAC",
+            "value": 0.9622181388328672
+        },
+        {
+            "source": "FYBR",
+            "target": "KLAC",
+            "value": 0.9586957469819436
+        },
+        {
+            "source": "CLNE",
+            "target": "BWEN",
+            "value": 0.963531447964062
+        },
+        {
+            "source": "LBRDK",
+            "target": "CHTR",
+            "value": 0.9821458054152252
+        },
+        {
+            "source": "LBRDA",
+            "target": "CHTR",
+            "value": 0.9818502006603442
+        },
+        {
+            "source": "LBRDA",
+            "target": "LBRDK",
+            "value": 0.9957705372891408
+        },
+        {
+            "source": "LILA",
+            "target": "LILAK",
+            "value": 0.99590144834254
+        },
+        {
+            "source": "LNT",
+            "target": "AEP",
+            "value": 0.9569295746864284
+        }
+    ]
+}
