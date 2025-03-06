@@ -13,6 +13,7 @@
         <div class="graph-selection">
             <button onclick="showPearsonForceGraph()" class="active">Pearson Force Graph</button>
             <button onclick="showBetaForceGraph()">Beta Force Graph</button>
+            <button onclick="showBetaForceGraphFair()">Beta Force Graph (Fair)</button>
         </div>
 
         <div class="controls">
@@ -25,9 +26,10 @@
     </div>
 
     <!-- Load JavaScript files -->
-    <script src="js/main.js"></script>
     <script src="js/pearsonForceGraph.js"></script>
     <script src="js/betaForceGraph.js"></script>
+    <script src="js/betaForceGraphFair.js"></script>
+    <script src="js/main.js"></script>
     <script>
         // Show force directed graph by default
         showPearsonForceGraph();

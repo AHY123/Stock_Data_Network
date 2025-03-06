@@ -1,4 +1,4 @@
-function showBetaForceGraph() {
+function showBetaForceGraphFair() {
     clearVisualization();
 
     // Get container dimensions
@@ -218,8 +218,44 @@ function showBetaForceGraph() {
                 .restart();
         });
 
+    // Add rotation animation button
+    let isRotating = false;
+    let rotationAngle = 0;
+    let rotationInterval;
+
+    controls.append('button')
+        .text('Toggle Rotation')
+        .on('click', () => {
+            isRotating = !isRotating;
+            if (isRotating) {
+                // Start rotation
+                rotationInterval = setInterval(() => {
+                    rotationAngle += 0.001; // Adjust speed by changing this value
+                    const centerX = containerWidth / 2;
+                    const centerY = containerHeight / 2;
+                    
+                    // Update node positions
+                    nodes.forEach(d => {
+                        const dx = d.x - centerX;
+                        const dy = d.y - centerY;
+                        const angle = Math.atan2(dy, dx) + (Math.PI / 180); // Convert degrees to radians
+                        const distance = Math.sqrt(dx * dx + dy * dy);
+                        
+                        d.x = centerX + distance * Math.cos(angle);
+                        d.y = centerY + distance * Math.sin(angle);
+                    });
+                    
+                    // Update simulation
+                    simulation.alpha(0.3).restart();
+                }, 100); // Adjust interval for smoother/faster rotation
+            } else {
+                // Stop rotation
+                clearInterval(rotationInterval);
+            }
+        });
+
     // Load the graph data
-    d3.json('data/beta_stock_graph.json').then(graph => {
+    d3.json('data/beta_stock_graph_fair.json').then(graph => {
         // Create a map of node IDs to ensure they exist
         const nodeMap = new Map(graph.nodes.map(d => [d.id, d]));
 
@@ -287,7 +323,7 @@ function showBetaForceGraph() {
                 .id(d => d.id)
                 .distance(d => {
                     // Base distance plus node sizes
-                    const baseDistance = 20 + radiusScale(d.source.marketCap) + radiusScale(d.target.marketCap);
+                    const baseDistance = 50 + radiusScale(d.source.marketCap) + radiusScale(d.target.marketCap);
                     // For beta values:
                     // -1 means strong repulsion (long distance)
                     // 0 means neutral (base distance)
@@ -307,7 +343,7 @@ function showBetaForceGraph() {
                     const nodeLinks = links.filter(l => l.source.id === d.id || l.target.id === d.id);
                     const totalValue = nodeLinks.reduce((sum, l) => sum + Math.abs(l.value), 0);
                     // Convert to negative value for repulsion (higher value = stronger repulsion)
-                    return -(totalValue ** 0.2) * 50;
+                    return -(totalValue ** 0.2) * 10;
                 })
                 .distanceMax(300))
             .force('center', d3.forceCenter(containerWidth / 2, containerHeight / 2))
