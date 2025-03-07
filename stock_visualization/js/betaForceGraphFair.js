@@ -228,28 +228,25 @@ function showBetaForceGraphFair() {
         .on('click', () => {
             isRotating = !isRotating;
             if (isRotating) {
+                // Add rotation force
+                simulation
+                    .force('rotation', d3.forceRadial(
+                        d => Math.sqrt(Math.pow(d.x - containerWidth/2, 2) + Math.pow(d.y - containerHeight/2, 2)),
+                        containerWidth/2,
+                        containerHeight/2
+                    ).strength(1))
+                    .alpha(0.3)
+                    .restart();
+
                 // Start rotation
                 rotationInterval = setInterval(() => {
-                    rotationAngle += 0.001; // Adjust speed by changing this value
-                    const centerX = containerWidth / 2;
-                    const centerY = containerHeight / 2;
-                    
-                    // Update node positions
-                    nodes.forEach(d => {
-                        const dx = d.x - centerX;
-                        const dy = d.y - centerY;
-                        const angle = Math.atan2(dy, dx) + (Math.PI / 180); // Convert degrees to radians
-                        const distance = Math.sqrt(dx * dx + dy * dy);
-                        
-                        d.x = centerX + distance * Math.cos(angle);
-                        d.y = centerY + distance * Math.sin(angle);
-                    });
-                    
-                    // Update simulation
-                    simulation.alpha(0.3).restart();
-                }, 100); // Adjust interval for smoother/faster rotation
+                    rotationAngle += 0.5;
+                    // Update the rotation force's angle
+                    simulation.force('rotation').angle(rotationAngle);
+                }, 100);
             } else {
-                // Stop rotation
+                // Remove rotation force and stop interval
+                simulation.force('rotation', null);
                 clearInterval(rotationInterval);
             }
         });
