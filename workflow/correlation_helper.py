@@ -1,27 +1,23 @@
 import numpy as np
-import scipy.stats as sp
+from numba import njit
 
+@njit
 def standardize(X):
     return (X - np.mean(X)) / np.std(X)
 
+@njit
 def pct_change(X):
     return np.diff(X) / X[:-1] * 100
 
+@njit
 def remove_outliers(X, Y, threshold=3):
     """
     Remove outliers from paired arrays X and Y.
     If a value is an outlier in either X or Y, both corresponding values are removed.
-    
-    Args:
-        X, Y: numpy arrays of same length
-        threshold: number of standard deviations to consider a point an outlier
-    
-    Returns:
-        X_clean, Y_clean: numpy arrays with outliers removed
     """
     # Convert to numpy arrays if not already
-    X = np.array(X)
-    Y = np.array(Y)
+    X = np.asarray(X)
+    Y = np.asarray(Y)
     
     # Calculate z-scores for both arrays
     z_scores_X = np.abs((X - np.mean(X)) / np.std(X))
@@ -33,118 +29,109 @@ def remove_outliers(X, Y, threshold=3):
     # Return filtered arrays
     return X[mask], Y[mask]
 
-def compute_pearson(stock_returns_1, stock_returns_2):
+@njit
+def compute_pearson(x, y):
     """
-    Compute Pearson correlation coefficient between two stocks based on their daily returns.
-    
-    Parameters:
-    - stock_returns_1: numpy array of first stock's returns
-    - stock_returns_2: numpy array of second stock's returns
-    
-    Returns:
-    - Pearson correlation coefficient
+    Compute Pearson correlation coefficient using numba-compatible operations.
     """
-    return sp.stats.pearsonr(stock_returns_1, stock_returns_2)[0]
+    n = len(x)
+    mean_x = np.mean(x)
+    mean_y = np.mean(y)
+    std_x = np.std(x)
+    std_y = np.std(y)
+    
+    if std_x == 0 or std_y == 0:
+        return 0.0
+        
+    sum_xy = 0.0
+    for i in range(n):
+        sum_xy += (x[i] - mean_x) * (y[i] - mean_y)
+        
+    return sum_xy / (n * std_x * std_y)
 
-
-
-
+@njit
 def rolling_beta(stock_returns, market_returns, window):
     """
     Compute rolling beta of a stock relative to the market.
-    
-    Parameters:
-    - stock_returns: numpy array of stock returns
-    - market_returns: numpy array of market returns
-    - window: rolling window size (e.g., 30 for 30-day rolling beta)
-    
-    Returns:
-    - numpy array of rolling beta values (NaN for the first (window-1) values)
     """
-    betas = np.full(len(stock_returns), np.nan)  # Initialize with NaNs
+    betas = np.full(len(stock_returns), np.nan)
 
     for i in range(window, len(stock_returns)):
         # Extract rolling window slices
-        r_s = stock_returns[i-window:i]  # Stock returns for window
-        r_m = market_returns[i-window:i]  # Market returns for window
+        r_s = stock_returns[i-window:i]
+        r_m = market_returns[i-window:i]
         
-        # Compute covariance and variance
-        cov_matrix = np.cov(r_s, r_m)
-        cov_stock_market = cov_matrix[0, 1]
-        var_market = cov_matrix[1, 1]
+        # Compute means
+        mean_s = np.mean(r_s)
+        mean_m = np.mean(r_m)
+        
+        # Compute covariance and variance manually
+        sum_cov = 0.0
+        sum_var = 0.0
+        for j in range(window):
+            dev_s = r_s[j] - mean_s
+            dev_m = r_m[j] - mean_m
+            sum_cov += dev_s * dev_m
+            sum_var += dev_m * dev_m
+        
+        cov_stock_market = sum_cov / (window - 1)
+        var_market = sum_var / (window - 1)
         
         # Compute beta
-        betas[i] = cov_stock_market / var_market if var_market != 0 else np.nan  # Avoid division by zero
+        betas[i] = cov_stock_market / var_market if var_market != 0 else np.nan
 
     return betas
 
-def compute_beta_correlation(stock_returns_1, stock_returns_2, market_returns, window):
-    betas_1 = rolling_beta(stock_returns_1, market_returns, window)[window:]
-    betas_2 = rolling_beta(stock_returns_2, market_returns, window)[window:]
-    return np.corrcoef(betas_1, betas_2)[0, 1]
-
-def compute_r_squared(stock_returns_1, stock_returns_2):
-    """
-    Compute R^2 between two stocks based on their daily returns.
-    
-    Parameters:
-    - stock_returns_1: numpy array of first stock's returns
-    - stock_returns_2: numpy array of second stock's returns
-    
-    Returns:
-    - R^2 value
-    """
-    # Compute Pearson correlation coefficient
-    correlation_matrix = np.corrcoef(stock_returns_1, stock_returns_2)
-    correlation = correlation_matrix[0, 1]  # Extract correlation value
-    
-    # Compute R^2
-    r_squared = correlation ** 2
-    return r_squared
-
+@njit
 def compute_correlation_metrics(stock_returns_1, stock_returns_2, market_returns, window):
     """
-    Compute all correlation metrics at once to avoid redundant calculations.
-    
-    Returns:
-    - pearson_corr: Pearson correlation coefficient
-    - beta_corr: Beta correlation
-    - r_squared: R-squared value
+    Compute all correlation metrics at once using numba-compatible operations.
     """
-    # Compute correlation matrix once
-    corr_matrix = np.corrcoef(stock_returns_1, stock_returns_2)
-    pearson_corr = corr_matrix[0, 1]
-    r_squared = pearson_corr ** 2
+    # Compute Pearson correlation
+    pearson_corr = compute_pearson(stock_returns_1, stock_returns_2)
+    r_squared = pearson_corr * pearson_corr
     
-    # Compute rolling betas efficiently
+    # Compute rolling betas
     betas_1 = np.full(len(stock_returns_1), np.nan)
     betas_2 = np.full(len(stock_returns_2), np.nan)
     
-    # Pre-calculate market variance for the rolling windows
-    market_var = np.array([np.var(market_returns[i-window:i]) 
-                          for i in range(window, len(market_returns))])
-    
-    # Compute rolling betas for both stocks simultaneously
+    # Compute rolling betas for both stocks
     for i in range(window, len(stock_returns_1)):
         window_slice = slice(i-window, i)
-        cov_matrix = np.cov(np.vstack([
-            stock_returns_1[window_slice],
-            stock_returns_2[window_slice],
-            market_returns[window_slice]
-        ]))
+        r_s1 = stock_returns_1[window_slice]
+        r_s2 = stock_returns_2[window_slice]
+        r_m = market_returns[window_slice]
         
-        # Extract covariances with market
-        cov_stock1_market = cov_matrix[0, 2]
-        cov_stock2_market = cov_matrix[1, 2]
-        var_market = cov_matrix[2, 2]
+        # Compute means
+        mean_s1 = np.mean(r_s1)
+        mean_s2 = np.mean(r_s2)
+        mean_m = np.mean(r_m)
         
+        # Compute covariances and variances manually
+        sum_cov1 = 0.0
+        sum_cov2 = 0.0
+        sum_var = 0.0
+        for j in range(window):
+            dev_s1 = r_s1[j] - mean_s1
+            dev_s2 = r_s2[j] - mean_s2
+            dev_m = r_m[j] - mean_m
+            sum_cov1 += dev_s1 * dev_m
+            sum_cov2 += dev_s2 * dev_m
+            sum_var += dev_m * dev_m
+        
+        var_market = sum_var / (window - 1)
         if var_market != 0:
-            betas_1[i] = cov_stock1_market / var_market
-            betas_2[i] = cov_stock2_market / var_market
+            betas_1[i] = (sum_cov1 / (window - 1)) / var_market
+            betas_2[i] = (sum_cov2 / (window - 1)) / var_market
     
-    # Compute beta correlation
-    valid_betas = ~np.isnan(betas_1[window:]) & ~np.isnan(betas_2[window:])
-    beta_corr = np.corrcoef(betas_1[window:][valid_betas], 
-                           betas_2[window:][valid_betas])[0, 1]
+    # Compute beta correlation using valid betas only
+    valid_mask = ~np.isnan(betas_1[window:]) & ~np.isnan(betas_2[window:])
+    if np.sum(valid_mask) > 1:  # Need at least 2 points for correlation
+        beta_corr = compute_pearson(
+            betas_1[window:][valid_mask], 
+            betas_2[window:][valid_mask]
+        )
+    else:
+        beta_corr = np.nan
     
     return pearson_corr, beta_corr, r_squared
