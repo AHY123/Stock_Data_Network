@@ -1,0 +1,55 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.9 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.9">
+  <diagram name="Page-1" id="zLvNyqMYhCpr3ko6A6uU">
+    <mxGraphModel dx="1130" dy="817" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RcsWHTMvzNLQxLu5Stsf-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RcsWHTMvzNLQxLu5Stsf-1" target="RcsWHTMvzNLQxLu5Stsf-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RcsWHTMvzNLQxLu5Stsf-1" value="NASDAQ top 50 stocks from 11 Sectors" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RcsWHTMvzNLQxLu5Stsf-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RcsWHTMvzNLQxLu5Stsf-4" target="RcsWHTMvzNLQxLu5Stsf-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RcsWHTMvzNLQxLu5Stsf-4" value="Download 2023-01-01 -&amp;gt; 2025-5-28 through Yahoo Finance" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="40" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RcsWHTMvzNLQxLu5Stsf-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RcsWHTMvzNLQxLu5Stsf-6" target="RcsWHTMvzNLQxLu5Stsf-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RcsWHTMvzNLQxLu5Stsf-6" value="Calculate all residual returns compared to S&amp;amp;P 500&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="40" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RcsWHTMvzNLQxLu5Stsf-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="RcsWHTMvzNLQxLu5Stsf-8" target="RcsWHTMvzNLQxLu5Stsf-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RcsWHTMvzNLQxLu5Stsf-8" value="Compute correlation matrix between all stock residual returns" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="40" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RcsWHTMvzNLQxLu5Stsf-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RcsWHTMvzNLQxLu5Stsf-11" target="RcsWHTMvzNLQxLu5Stsf-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RcsWHTMvzNLQxLu5Stsf-11" value="Carry out PCA on correlation matrix to get omponents" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="160" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RcsWHTMvzNLQxLu5Stsf-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RcsWHTMvzNLQxLu5Stsf-12" target="RcsWHTMvzNLQxLu5Stsf-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RcsWHTMvzNLQxLu5Stsf-12" value="Carry out t-SNE on PCA results to get embeddings" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="160" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RcsWHTMvzNLQxLu5Stsf-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RcsWHTMvzNLQxLu5Stsf-13" target="RcsWHTMvzNLQxLu5Stsf-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RcsWHTMvzNLQxLu5Stsf-13" value="Carry out K-Means on t-SNE results to get cluster labels" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="160" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RcsWHTMvzNLQxLu5Stsf-14" value="Using cluster to identify correlated stocks" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="160" width="160" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
